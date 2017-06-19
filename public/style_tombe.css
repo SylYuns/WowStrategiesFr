@@ -12,6 +12,12 @@ details {
 	margin-top: 10px;
 }
 
+.dedicace {
+	float: right;
+	font-style: italic;
+	color: red;
+}
+
 .boss_intro {
 	width: 100%;
 	background-color: lightred;
