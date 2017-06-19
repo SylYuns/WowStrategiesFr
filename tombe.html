@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- En-tête de la page -->
+        <meta charset="iso-8859-1" />
+		<link rel="stylesheet" type="text/css" href="style_tombe.css" />
+        <title>Stratégie Tombe de Sargeras</title>
+    </head>
+
+    <body>
+        <!-- Corps de la page -->
+		<h1 id="goroth_title">Goroth</h1>
+		
+		<div class="boss_intro">
+			<h3>Premier boss du raid, 1 seule phase de tout le combat.</h3>
+		</div>
+		
+		<div class="generalites_combat">
+			Le boss est tanké au fond de la salle, dos au raid.
+			<br/>Les distants sont au centre de la salle, espacés les uns des autres pour ne pas se gêner
+			<br/>
+			<details>
+				<summary>Afficher le positionnement :</summary>
+				<fieldset>
+					<img class="generalites_img" src="./img/goroth_position.png"/>
+				</fieldset>
+			</details>
+		</div>
+		
+		<div class="technique" id="goroth_pointe_infernale">
+			<div class="technique_detail">
+			Première technique : <span class="technique_detail_nom">Pointe Infernale. </span>
+			</div>
+			<p>Fait apparaître une pointe sous les pieds d'un ou plusieurs joueurs au bout de quelques secondes, 
+			les joueurs doivent s'écarter avant qu'elle apparaisse.
+			</p>
+			<img class="technique_image" src="./img/goroth_pointe.png"/>
+		</div>
+		
+		<div class="technique" id="goroth_etoile_fracassante">
+			<div class="technique_detail">
+			Deuxième technique : <span class="technique_detail_nom">Etoile Fracassante. </span>
+			</div>
+			<p>Vise un joueur et le marque avec une flèche partant du boss, et une flèche rouge au-dessus du joueur. Après 6 secondes envoie une météorite sur ce joueur. 
+			Plus la météorite rencontre de piliers, moins elle fait de dégâts, il faut donc bien se placer.
+			<span class="attention_nb">Attention toutefois à ne pas détruire tous les piliers, il en faut pour les autres techniques. En traverser 2-3 devrait suffir.</span>
+			</p>
+			<img class="technique_image" src="./img/goroth_etoile.png"/>
+		</div>
+		
+		<div class="technique" id="goroth_brulure_infernale">
+			<div class="technique_detail">
+			Troisième technique : <span class="technique_detail_nom">Brûlure Infernale. </span>
+			</div>
+			<p>Quand il arrive au max d'énergie, Goroth lance une AOE sur toute la zone. Les joueurs doivent se cacher derrière les piliers pour ne pas prendre les dégâts.
+			<span class="attention_nb">Similaire à l'Onde de choc de Skorpyron.</span>
+			</p>
+			<img class="technique_image" src="./img/goroth_brulure.png"/>
+		</div>
+		
+		<div class="technique" id="goroth_comete_deferlante">
+			<div class="technique_detail">
+			Quatrième technique : <span class="technique_detail_nom">Comète déferlante. </span>
+			</div>
+			<p>Marque plusieurs joueurs avec le debuff Comète déferlante, au bout de 4 secondes une comète tombe sur le joueur, infligeant des dégâts AOE de 10m autour du joueur.
+			Celui-ci doit donc s'écarter du raid.
+			<span class="attention_nb">La comète détruit les piliers qu'elle touche, attention à ne pas être à côté d'un pilier.</span>
+			</p>
+			<img class="technique_image" src="./img/goroth_comete.png"/>
+		</div>
+		
+		<div class="technique" id="goroth_armure_ardente">
+			<div class="technique_detail">
+			Cinquième technique : <span class="technique_detail_nom">Armure ardente / Armure fondue. </span><img src="./img/icon/tank.png" title="Technique de tanking"/>
+			</div>
+			<p>Place un débuff d'armure sur le tank. L'autre tank doit donc récupérer l'aggro immédiatement. Le débuff explose en AOE très large au bout de 10 sec, infligeant des dégâts de raid et détruisant les piliers. Le tank qui reçoit le débuff doit donc vite s'écarter du raid.
+			</p>
+			<img class="technique_image" src="./img/goroth_armure.png"/>
+		</div>
+		
+		<div class="technique" id="goroth_eruption_gangrenee">
+			<div class="technique_detail">
+			Sixième technique : <span class="technique_detail_nom">Eruption gangrenée. </span>
+			<img class="technique_heroic_only" src="./img/icon/heroic.png" title="Seulement en difficulté Héroïque"/>
+			</div>
+			<p>De temps en temps pendant le combat, un quart de la zone va être recouvert de flammes gangrenées, qui infligent des dégâts et détruisent les piliers qu'elles touchent. 
+			<br/>
+			Pour contrer cela, les distants doivent être bien répartis dans toute la zone de combat, pour qu'il y ait des piliers de partout, et ainsi éviter de se retrouver sans aucun pilier quand la zone en flamme change.
+			</p>
+			<img class="technique_image" src="./img/goroth_eruption.png"/>
+		</div>
+		
+    </body>
+</html>
