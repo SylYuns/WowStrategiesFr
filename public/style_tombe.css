@@ -1,0 +1,48 @@
+body {
+	
+} 
+
+h1 {
+	color: red;
+	margin-bottom: 10px;
+}
+
+details {
+	font-style: italic;
+	margin-top: 10px;
+}
+
+.boss_intro {
+	width: 100%;
+	background-color: lightred;
+	border-bottom: 2px solid #666;
+	margin-bottom: 10px;
+}
+
+.generalites_combat {
+	background-color: lightyellow;
+	border: 1px solid #666;
+	padding: 2px;
+	margin: 0px;
+}
+
+.technique_detail {
+	border-bottom: 1px solid #666;
+	margin-top: 20px;
+}
+
+.technique_detail_nom {
+	font-weight: bold;
+}
+
+.technique_image {
+	margin-left: 50px;
+}
+
+.attention_nb {
+	background: lightgreen;
+}
+
+.fin_page {
+	margin-bottom: 300px;
+}
