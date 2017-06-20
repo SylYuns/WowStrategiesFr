@@ -37,23 +37,22 @@
 			</details>-->
 		</div>
 		
-		<!--<details>
+		<details>
 			<summary>Résumé : (clic pour afficher)</summary>
 			<fieldset>
 				<ul>
-					<li>Tank-swap à chaque Fardeau de douleur.</li>
-					<li>Les murlocs et les serpents peuvent être cut et contrôlés.</li>
-					<li>Les murlocs doivent être tués immédiatement.</li>
-					<li>Les serpents doivent être tués juste avant que les tornades arrivent.</li>
-					<li>Si vous avez un débuff Faim dévorante, placez-vous sous les méduses.</li>
-					<li>2 joueurs pour encaisser chaque Tir de l'hydre, pas plus.</li>
-					<li>Ne pas encaisser 2 tirs à la suite.</li>
-					<li>Esquiver la zone avec des bulles.</li>
-					<li>Nourrir la baleine avec 3 encres.</li>
-					<li>Faire durer la P3 le moins longtemps possible.</li>
+					<li>Faire en sorte de ne pas monter trop haut en stacks. Purger les stacks en changeant de côté de lune</li>
+					<li>Tank-swap sur Glaive Lunaire (P1) et Feu de la Lune (P3). Purger la Désincarnation après Glaive Lunaire.</li>
+					<li>Ne pas rester en face de la Chasseresse pour son Glaive de crépuscule.</li>
+					<li>Purger le débuff Brûlure Lunaire et Tir Accéléré.</li>
+					<li>Pleine/Nouvelle Lune P1, se stack sur la trajectoire du rayon.</li>
+					<li>Focus l'add en P2, ne pas le laisser longtemps sous 25% PV.</li>
+					<li>Pleine/Nouvelle Lune P2, burst DPS sur le boss et burst heal sur le raid.</li>
+					<li>S'écarter du raid avec le débuff Balise Lunaire.</li>
+					<li>Pleine/Nouvelle Lune P3, ne pas être au milieu de la salle, esquiver les glaives.</li>
 				</ul>
 			</fieldset>
-		</details>-->
+		</details>
 		
 		<div class="technique" id="inqui_tourment">
 			<div class="technique_detail">
@@ -62,7 +61,7 @@
 			<p>Le sol de la salle va constamment évoluer, en suivant une évolution lunaire (Nouvelle lune, quart de lune, ..., Pleine lune, etc.)
 			<br/><br/>Tant que le joueur reste du côté clair de la lune, il reçoit un débuff qui se stack, <b>Suffusion lunaire</b>, qui augmente les dégâts d'Arcane reçus de 3% par stack.
 			<br/><br/>Tant que le joueur reste du côté obscur de la lune, il reçoit un débuff qui se stack, <b>Suffusion ombreuse</b>, qui augmente les dégâts d'Ombre reçus de 3% par stack.
-			<br/><br/>Si le joueur change de côté de la lune (même s'il ne bouge pas ça peut être le sol qui avance), il va proc une <b>Purge Astrale</b>, ce qui va lui infliger des dégâts, et augmenter les dégâts de la prochaine Purge Astrale de 50% pendant quelques secondes.
+			<br/><br/>Si le joueur change de côté de la lune (même s'il ne bouge pas ça peut être le sol qui avance), il va proc une <b>Purge Astrale</b>, ce qui va lui retirer les stacks de Suffusion lunaire et Suffusion ombreuse en lui infligeant des dégâts, et augmenter les dégâts de la prochaine Purge Astrale de 50% pendant quelques secondes.
 			<br/><br/>Le but n'est donc pas de changer de côté sans cesse, mais seulement quand certaines techniques le demandent.
 			<br/><br/>
 			<span class="attention_nb">Lorsque le sol est complètement recouvert par le côté clair ou obscur, les boss vont utiliser une technique puissante en fonction de la phase.</span>
@@ -79,11 +78,11 @@
 		
 		<div class="technique" id="sisters_glaive_lunaire">
 			<div class="technique_detail">
-			Première technique <span class="technique_phase">(P1)</span> : <span class="technique_detail_nom">Glaive lunaire. </span></span><img src="./img/icon/tank.png" title="Technique de tanking"/>
+			Première technique <span class="technique_phase">(P1)</span> : <span class="technique_detail_nom">Glaive lunaire. </span><img src="./img/icon/tank.png" title="Technique de tanking"/>
 			</div>
 			<p>Lance un glaive sur le tank actuel, qui inflige de dégâts à la première cible et rebondit sur 2 cibles supplémentaires.
 			<br/>Le tank doit utiliser un CD pour diminuer les dégâts encaissés.
-			<br/>Le glaive laisse un débuff qui réduit les soins de 75%, les tanks doivent donc s'échanger le boss après cela, et le tank qui a le débuff doit s'il le peut changer de côté de la lune pour enlever le débuff.
+			<br/>Le glaive laisse un débuff <b>Désincarnation</b>, qui réduit les soins de 75%, les tanks doivent donc s'échanger le boss après cela, et le tank qui a le débuff doit s'il le peut changer de côté de la lune pour enlever le débuff.
 			</p>
 			<!--<img class="technique_image" src="./img/sass/sass_fardeau_douleur.jpg"/>-->
 		</div>
@@ -148,7 +147,7 @@
 			<div class="technique_detail">
 			Première technique <span class="technique_phase">(P2, P3)</span> : <span class="technique_detail_nom">Tir accéléré et Appel de Serre-de-Lune. </span>
 			</div>
-			<p>La Capitaine Yathe Heurtelune remplace son Tir de l'Ombre par un Tir Accéléré, qui au lieu de faire des dégâts directs va infliger un DOT. Le joueur touché doit essayer de proc la Purge Astrale pour supprimer sa Suffusion Ombreuse.
+			<p>La Capitaine Yathe Heurtelune remplace son Tir de l'Ombre par un Tir Accéléré, qui au lieu de faire des dégâts directs va infliger un DOT de 5 secondes. Le joueur touché doit essayer de proc la Purge Astrale pour supprimer sa Suffusion Ombreuse.
 			<br/>La Capitaine va surtout appeler Serre-de-Lune, ce qui invoque un add. Cet add doit être tanké et lance des Hurlement Mortel en-dessous de 25% PV, qui infligent des dégâts de raid.
 			<br/>Les dégâts augmentent de 25% à chaque cri. Cet add est donc la priorité des DPS.
 			</p>
@@ -179,7 +178,7 @@
 		
 		<div class="transition_phase" id="sisters_p1">
 			<p>
-				A 40% de PV, la Capitaine se retire et c'est la Prêtresse Pyroluna va prendre sa place.
+				A 40% de PV, la Capitaine se retire et c'est la Prêtresse Pyroluna qui va prendre sa place.
 				<br/>La Chasseresse conserve ses techniques <a href="#sisters_glaive_crépuscule" class="technique_link">Glaive du crépuscule</a> et <a href="#sisters_glaive_spectral" class="technique_link">Glaive Spectral</a>, toujours en sautant dans la salle.
 				<br/>La Capitaine garde ses techniques <a href="#sisters_salve_crepu" class="technique_link">Salve du crépuscule et Tir de l'Ombre</a>.
 				<br/>La Prêtresse continue de lancer des <a href="#sisters_brulure_lunaire" class="technique_link">Brûlures Lunaires</a>.
@@ -189,7 +188,7 @@
 		
 		<div class="technique" id="sisters_feu_lune">
 			<div class="technique_detail">
-			Première technique <span class="technique_phase">(P3)</span> : <span class="technique_detail_nom">Feu de la lune. </span>
+			Première technique <span class="technique_phase">(P3)</span> : <span class="technique_detail_nom">Feu de la lune. </span> <img src="./img/icon/tank.png" title="Technique de tanking"/>
 			</div>
 			<p>La Prêtresse remplace sa technique Frappe Lunaire par Feu de la Lune, qui est un DOT sur le tank actuel.
 			<br/>Les tanks doivent donc s'échanger le boss quand ils ont ce DOT.
