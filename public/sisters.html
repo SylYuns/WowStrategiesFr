@@ -6,7 +6,7 @@
         <!-- En-tête de la page -->
         <meta charset="iso-8859-1" />
 		<link rel="stylesheet" type="text/css" href="style_tombe.css" />
-        <title>Stratégie Tombe de Sargeras : Maîtresse Sass'zine</title>
+        <title>Stratégie Tombe de Sargeras : Soeurs de la lune</title>
     </head>
 
     <body>
@@ -17,18 +17,16 @@
 		</script>
 	
         <!-- Corps de la page -->
-		<h1 id="sass_title">Maîtresse Sass'zine</h1>
+		<h1 id="sass_title">Soeurs de la lune</h1>
 		
 		<div class="boss_intro">
-			<h3>Quatrième boss du raid, 3 phases, la P3 combine les techniques de P1 et P2.</h3>
-			<span class="loot_tier20"><img src="./img/icon/loot.png" title="Drop une pièce de set"/> Drop les Jambières T20</span>
+			<h3>Cinquième boss du raid, 3 phases, 1 seul boss actif à chaque phase, les 2 autres lancent quand même des techniques.</h3>
 		</div>
 		
 		<div class="generalites_combat">
-			En P1 (100->70%) : gestion des adds, d'un débuff, d'un dispell et esquive des tornades.
-			<br/>En P2 (70->30%) : esquive d'une zone qui traverse la salle (style P2 Tichondrius), apporter les débuffs à un add pour le faire partir.
-			<br/>En P3 (30->0%) :  P1 + P2, beaucoup de choses à gérer et débuff qui ne peuvent pas être enlevés = il faut finir le boss très vite.
-			<br/>L'utilisation de la BloodLust en P3 est donc certainement une bonne option.
+			En P1 (100->70%) : Chasseresse Kasparianne.
+			<br/>En P2 (70->30%) : Capitaine Yathe Heurtelune + Serre-de-lune.
+			<br/>En P3 (30->0%) :  Prêtresse Pyroluna.
 			<!--<details>
 				<summary>Afficher le positionnement :</summary>
 				<fieldset>
@@ -37,7 +35,7 @@
 			</details>-->
 		</div>
 		
-		<details>
+		<!--<details>
 			<summary>Résumé : (clic pour afficher)</summary>
 			<fieldset>
 				<ul>
@@ -53,7 +51,22 @@
 					<li>Faire durer la P3 le moins longtemps possible.</li>
 				</ul>
 			</fieldset>
-		</details>
+		</details>-->
+		
+		<div class="technique" id="inqui_tourment">
+			<div class="technique_detail">
+			Méchanique spéciale : <span class="technique_detail_nom">Fonts d'Elune.</span>
+			</div>
+			<p>Le sol de la salle va constamment évoluer, en suivant une évolution lunaire (Nouvelle lune, quart de lune, pleine lune, etc.)
+			<br/><br/>Tant que le joueur reste du côté clair de la lune, il reçoit un débuff qui se stack, <b>Suffusion lunaire</b>, qui augmente les dégâts d'Arcane reçus de 3% par stack.
+			<br/><br/>Tant que le joueur reste du côté obscur de la lune, il reçoit un débuff qui se stack, <b>Suffusion ombreuse</b>, qui augmente les dégâts d'Ombre reçus de 3% par stack.
+			<br/><br/>Si le joueur change de côté de la lune (même s'il ne bouge pas ça peut être le sol qui avance), il va proc une <b>Purge Astrale</b>, ce qui va lui infliger des dégâts, et augmenter les dégâts de la prochaine Purge Astrale de 50% pendant quelques secondes.
+			<br/><br/>Le but n'est donc pas de changer de côté sans cesse, mais seulement quand certaines techniques le demandent.
+			<br/><img class="technique_image" src="./img/sisters/sisters_fonts.jpg"/>
+			<br/><br/>
+			<span class="attention_nb">Lorsque le sol est complètement recouvert par le côté clair ou obscur, les boss vont utiliser une technique puissante en fonction de la phase.</span>
+			</p>
+		</div>
 		
 		<div class="technique" id="sass_fardeau_douleur">
 			<div class="technique_detail">
