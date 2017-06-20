@@ -57,63 +57,132 @@
 			<div class="technique_detail">
 			Méchanique spéciale : <span class="technique_detail_nom">Fonts d'Elune.</span>
 			</div>
-			<p>Le sol de la salle va constamment évoluer, en suivant une évolution lunaire (Nouvelle lune, quart de lune, pleine lune, etc.)
+			<p>Le sol de la salle va constamment évoluer, en suivant une évolution lunaire (Nouvelle lune, quart de lune, ..., Pleine lune, etc.)
 			<br/><br/>Tant que le joueur reste du côté clair de la lune, il reçoit un débuff qui se stack, <b>Suffusion lunaire</b>, qui augmente les dégâts d'Arcane reçus de 3% par stack.
 			<br/><br/>Tant que le joueur reste du côté obscur de la lune, il reçoit un débuff qui se stack, <b>Suffusion ombreuse</b>, qui augmente les dégâts d'Ombre reçus de 3% par stack.
 			<br/><br/>Si le joueur change de côté de la lune (même s'il ne bouge pas ça peut être le sol qui avance), il va proc une <b>Purge Astrale</b>, ce qui va lui infliger des dégâts, et augmenter les dégâts de la prochaine Purge Astrale de 50% pendant quelques secondes.
 			<br/><br/>Le but n'est donc pas de changer de côté sans cesse, mais seulement quand certaines techniques le demandent.
-			<br/><img class="technique_image" src="./img/sisters/sisters_fonts.jpg"/>
 			<br/><br/>
 			<span class="attention_nb">Lorsque le sol est complètement recouvert par le côté clair ou obscur, les boss vont utiliser une technique puissante en fonction de la phase.</span>
+			<br/><br/>
+			<img class="technique_image" src="./img/sisters/sisters_fonts.jpg"/>
 			</p>
 		</div>
 		
-		<div class="technique" id="sass_fardeau_douleur">
+		<div class="transition_phase" id="sisters_p1">
+			<p>
+				Au début du fight, c'est la Chasseresse Krasparianne qui est gérée, les deux autres soeurs sont inciblables.
+			</p>
+		</div>
+		
+		<div class="technique" id="sisters_glaive_lunaire">
 			<div class="technique_detail">
-			Première technique <span class="technique_phase">(P1, 2, 3)</span> : <span class="technique_detail_nom">Fardeau de douleur. </span></span><img src="./img/icon/tank.png" title="Technique de tanking"/>
+			Première technique <span class="technique_phase">(P1)</span> : <span class="technique_detail_nom">Glaive lunaire. </span></span><img src="./img/icon/tank.png" title="Technique de tanking"/>
 			</div>
-			<p>Place un débuff sur le main-tank. Ce débuff dure 1 minute et inflige des dégâts d'Ombre.
-			<br/>De plus, tous les dégâts physiques que prend le tank sont répercutés sur tout le raid.
-			<br/>Le tank qui a ce débuff doit donc laisser le boss à l'autre tank et s'occuper des adds (ils n'infligent pas de dégâts physiques)
+			<p>Lance un glaive sur le tank actuel, qui inflige de dégâts à la première cible et rebondit sur 2 cibles supplémentaires.
+			<br/>Le tank doit utiliser un CD pour diminuer les dégâts encaissés.
+			<br/>Le glaive laisse un débuff qui réduit les soins de 75%, les tanks doivent donc s'échanger le boss après cela, et le tank qui a le débuff doit s'il le peut changer de côté de la lune pour enlever le débuff.
 			</p>
 			<!--<img class="technique_image" src="./img/sass/sass_fardeau_douleur.jpg"/>-->
 		</div>
 		
-		<div class="technique" id="sass_fond_abysses">
+		<div class="technique" id="sisters_glaive_crépuscule">
 			<div class="technique_detail">
-			Deuxième technique <span class="technique_phase">(P1, 2, 3)</span> : <span class="technique_detail_nom">Du fond des abysses. </span>
+			Deuxième technique <span class="technique_phase">(P1, P2, P3)</span> : <span class="technique_detail_nom">Glaive du crépuscule. </span>
 			</div>
-			<p>Fait apparaître trois Traqueurs des abysses, qui seront tankés par l'off-tank.
-			<br/>Les adds peuvent être stun / slow / grip, etc.
-			<br/>Quand ils meurent ils laissent une AOE qui fait des dégâts et réduit de 75% les chances de toucher, il faut donc en sortir immédiatement.
-			<br/>Ces adds doivent être cleave sur le boss <span class="attention_nb">et mourir juste avant que les <a href="#sass_tornades_tranchantes" class="technique_link">Tornades Tranchantes</a> arrivent, car l'AOE qu'ils laissent aide à passer à travers les Tornades.</span>
+			<p>Vise un joueur et place une grosse flèche partant du boss pour identifier où le glaive va partir.
+			<br/>Le glaive inflige des dégâts d'Ombre à tous les personnages sur la trajectoire, les joueurs non-visés doivent donc s'écarter.
+			<br/>Si le joueur visé à beaucoup de stacks de Suffusion Ombreuse, il doit utiliser un CD défensif pour encaisser.</span>
 			</p>
-			<img class="technique_image" src="./img/sass/sass_fond_abysses.jpg"/>
+			<img class="technique_image" src="./img/sisters/sisters_glaive_crepu.jpg"/>
 		</div>
 		
-		<div class="technique" id="sass_tir_hydre">
+		<div class="technique" id="sisters_brulure_lunaire">
 			<div class="technique_detail">
-			Troisième technique <span class="technique_phase">(P1, 2, 3)</span> : <span class="technique_detail_nom">Tir de l'hydre. </span>
+			Troisième technique <span class="technique_phase">(P1, P2, P3)</span> : <span class="technique_detail_nom">Frappe lunaire & brûlure lunaire. </span>
 			</div>
-			<p>Marque plusieurs joueurs d'une flèche au-dessus de leur personnage, et indique la direction des tirs avec des flèches devant le boss.
-			<br/>Après 6 secondes, les joueurs marqués subissent de gros dégâts physiques, qui sont divisés entre tous les personnages sur la trajectoire.
-			<br/>Les joueurs touchés par les dégâts reçoivent le débuff "Acide d'hydre" pendant 6 secondes. S'ils reçoivent un autre tir avec ce débuff, ils seront stun 6 secondes.
-			<br/>Le tank qui a le débuff <a href="#sass_fardeau_douleur" class="technique_link">Fardeau de douleur</a> doit faire attention à ne pas être touché par les tirs.
+			<p>La Prêtresse Pyroluna va attaquer des joueurs avec sa <b>Frappe Lunaire</b>, ce qui inflige des dégâts d'arcane.
+			<br/>La Prêtresse va également placer des <b>Brûlures Lunaires</b> sur des joueurs, qui est un DOT d'Arcane qui dure 2 minutes 30.
+			<br/>Les joueurs qui reçoivent ce DOT doivent essayer de proc un purge astrale en changeant de côté de la lune, pour faire disparaître le débuff.
 			<br/><br/>
-			<span class="attention_nb">Les joueurs marqués doivent s'écarter les uns des autres pour qu'un autre joueur vienne se placer devant chacun d'eux pour lisser les dégâts. Attention à ce qu'il n'y ait pas trop de monde à la fois qui absorbe pour que tout le raid ne se retrouve pas avec le débuff !</span>
+			<span class="attention_nb">Si des joueurs sont trop haut en stacks de Suffusion Lunaire, ils vont prendre des dégâts considérables.</span>
 			</p>
-			<img class="technique_image" src="./img/sass/sass_tir_hydre.jpg"/>
 		</div>
 		
-		<div class="technique" id="sass_tornades_tranchantes">
+		<div class="technique" id="sisters_salve_crepu">
 			<div class="technique_detail">
-			Quatrième technique <span class="technique_phase">(P1, P3)</span> : <span class="technique_detail_nom">Tornades Tranchantes. </span>
+			Quatrième technique <span class="technique_phase">(P1, P2, P3)</span> : <span class="technique_detail_nom">Tir de l'Ombre et Salve du Crépuscule. </span>
 			</div>
-			<p>Sass'zine invoque une rangée de tornades qui vont traverser la salle. Les personnages touchés par les tornades subissent un DOT très violent.
-			<br/>Les tornades sont fortement ralenties par les AOE laissées à la mort des <a href="#sass_fond_abysses" class="technique_link">Traqueurs des abysses</a>, ceux-ci doivent donc mourir juste avant que les tornades arrivent. 
-			<br/>Le fonctionnement est donc similaire aux Anneaux de la Grand Magistrice Elisande.
+			<p>La Capitaine Yathe Heurtelune va attaquer des joueurs au hasard avec Tir de l'Ombre, infligeant des dégâts... d'Ombre (askip !).
+			<br/>La Capitaine va également placer lancer des <b>Salve du Crépuscule</b> sur un joueur distant, ce qui place une AOE d'Ombre sur sa position.
+			<br/>Les distants doivent donc faire attention à ne jamais être trop prêt du boss pour ne pas faire tomber l'AOE sur la mélée.
 			</p>
-			<img class="technique_image" src="./img/sass/sass_tornades_tranchantes.jpg"/>
+			<img class="technique_image" src="./img/sisters/sisters_salve_crepu.jpg"/>
+		</div>
+		
+		<div class="technique" id="sisters_tir_incorpo">
+			<div class="technique_detail">
+			Cinquième technique <span class="technique_phase">(P1 - Pleine/Nouvelle Lune)</span> : <span class="technique_detail_nom">Tir incorporel. </span>
+			</div>
+			<p>Lorsque la lune est Pleine ou Nouvelle, la Capitaine vise un joueur au hasard avec un rayon. Au bout de 8 secondes, inflige de lourds dégâts répartis entre tous les joueurs sur la trajectoire du rayon.
+			<br/>Le joueur visé doit donc se placer au milieu de la pièce, et les autres joueurs se mettent sur la trajectoire.
+			<br/><br/>
+			<span class="attention_nb">Si le raid a beaucoup de stacks de Suffusion Ombreuse, un CD heal défensif sera nécessaire.</span>
+			</p>
+			<img class="technique_image" src="./img/sisters/sisters_tir_incorpo.jpg"/>
+		</div>
+		
+		<div class="transition_phase" id="sisters_p1">
+			<p>
+				A 70% de PV, la Chasseresse se retire et c'est la Capitaine Yathe Heurtelune qui prend sa place.
+				<br/>La Chasseresse va quand même utiliser <a href="#sisters_glaive_crépuscule" class="technique_link">Glaive du crépuscule</a> en se téléportant partout dans la salle, les joueurs doivent donc faire attention à son positionnement pour pouvoir éviter le glaive.
+				<br/>La Capitaine garde sa technique <a href="#sisters_salve_crepu" class="technique_link">Salve du crépuscule</a>.
+				<br/>La Prêtresse garde ses techniques <a href="#sisters_brulure_lunaire" class="technique_link">Frappe lunaire & brûlure lunaire</a>.
+				<br/>
+			</p>
+		</div>
+		
+		<div class="technique" id="sisters_appel_serre">
+			<div class="technique_detail">
+			Première technique <span class="technique_phase">(P2, P3)</span> : <span class="technique_detail_nom">Tir accéléré et Appel de Serre-de-Lune. </span>
+			</div>
+			<p>La Capitaine Yathe Heurtelune remplace son Tir de l'Ombre par un Tir Accéléré, qui au lieu de faire des dégâts directs va infliger un DOT. Le joueur touché doit essayer de proc la Purge Astrale pour supprimer sa Suffusion Ombreuse.
+			<br/>La Capitaine va surtout appeler Serre-de-Lune, ce qui invoque un add. Cet add doit être tanké et lance des Hurlement Mortel en-dessous de 25% PV, qui infligent des dégâts de raid.
+			<br/>Les dégâts augmentent de 25% à chaque cri. Cet add est donc la priorité des DPS.
+			</p>
+			<img class="technique_image" src="./img/sisters/sisters_appel_serre.jpg"/>
+		</div>
+		
+		<div class="technique" id="sisters_glaive_spectral">
+			<div class="technique_detail">
+			Deuxième technique <span class="technique_phase">(P2, P3)</span> : <span class="technique_detail_nom">Glaive Spectral. </span>
+			</div>
+			<p>La Chasseresse va lancer un glaive rebondissant comme en P1, mais celui-ci ne visera pas forcément le tank.
+			<br/>Les ranges doivent être espacés les uns des autres pour essayer d'empêcher les rebonds du glaive.
+			</p>
+		</div>
+		
+		<div class="technique" id="sisters_etreinte">
+			<div class="technique_detail">
+			Troisième technique <span class="technique_phase">(P2 - Pleine/Nouvelle Lune)</span> : <span class="technique_detail_nom">Etreinte de l'éclipse. </span>
+			</div>
+			<p>Lorsque la lune est Pleine ou Nouvelle, la Prêtresse va placer un énorme bouclier d'absorption de dégâts sur la Capitaine, et des shiels d'absorption de heal sur tous les joueurs.
+			<br/><br/>
+			<span class="attention_nb">Tous les shields doivent être cassés en moins de 12 secondes, en utilisant des CDs de DPS et des CDs de Heal !</span>
+			<br/><br/>
+			<span class="attention_nb">Si les Heals n'arrivent pas à casser les shields d'absorb, les joueurs doivent s'espacer de 8 mètres les uns des autres pour ne pas prendre de dégâts. Les dégâts du shield sur le boss ne peuvent pas être esquivés.</span>
+			</p>
+			<img class="technique_image" src="./img/sisters/sisters_etreinte.jpg"/>
+		</div>
+		
+		<div class="transition_phase" id="sisters_p1">
+			<p>
+				A 40% de PV, la Capitaine se retire et ... c'est la Capitaine Yathe Heurtelune qui prend sa place.
+				<br/>La Chasseresse va quand même utiliser <a href="#sisters_glaive_crépuscule" class="technique_link">Glaive du crépuscule</a> en se téléportant partout dans la salle, les joueurs doivent donc faire attention à son positionnement pour pouvoir éviter le glaive.
+				<br/>La Capitaine garde sa technique <a href="#sisters_salve_crepu" class="technique_link">Salve du crépuscule</a>.
+				<br/>La Prêtresse garde ses techniques <a href="#sisters_brulure_lunaire" class="technique_link">Frappe lunaire & brûlure lunaire</a>.
+				<br/>
+			</p>
 		</div>
 		
 		<div class="technique" id="sass_faim_devorante">

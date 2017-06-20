@@ -1,0 +1,31 @@
+[debug] [2017-06-20T20:57:48.393Z] ----------------------------------------------------------------------
+[debug] [2017-06-20T20:57:48.396Z] Command:      G:\Utils\NodeJS\node.exe C:\Users\Syl\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2017-06-20T20:57:48.397Z] CLI Version:  3.9.1
+[debug] [2017-06-20T20:57:48.397Z] Platform:     win32
+[debug] [2017-06-20T20:57:48.397Z] Node Version: v6.11.0
+[debug] [2017-06-20T20:57:48.398Z] Time:         Tue Jun 20 2017 22:57:48 GMT+0200 (Paris, Madrid (heure d’été))
+[debug] [2017-06-20T20:57:48.398Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-06-20T20:57:48.413Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-06-20T20:57:48.414Z] > authorizing via signed-in user
+[debug] [2017-06-20T20:57:48.417Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-06-20T20:57:48.417Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/C7IhW6UBOG4CZUZ1-fTQsqmqVsCgP9vKWsANNcBChfAU1R588X0EsShr5A-rRxjt',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Tue Jun 20 2017 22:57:48 GMT+0200 (Paris, Madrid (heure d’été))
+[debug] [2017-06-20T20:57:48.640Z] <<< HTTP RESPONSE 200
+[debug] [2017-06-20T20:57:48.653Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/wowstategiesfr  
+ Tue Jun 20 2017 22:57:48 GMT+0200 (Paris, Madrid (heure d’été))
+[debug] [2017-06-20T20:57:49.613Z] <<< HTTP RESPONSE 200
+[debug] [2017-06-20T20:57:49.614Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/wowstategiesfr/tokens  
+ Tue Jun 20 2017 22:57:49 GMT+0200 (Paris, Madrid (heure d’été))
+[debug] [2017-06-20T20:57:51.022Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'wowstategiesfr'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing public directory for upload...
+[debug] [2017-06-20T20:57:53.293Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/wowstategiesfr/uploads/-Kn6I1HIP9PtBetKPtax?fileCount=125&message=  
+ Tue Jun 20 2017 22:57:53 GMT+0200 (Paris, Madrid (heure d’été))
