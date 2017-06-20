@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+<html>
+	<script src="https://www.w3schools.com/lib/w3.js"></script>
+	
+    <head>
+        <!-- En-tête de la page -->
+        <meta charset="iso-8859-1" />
+		<link rel="stylesheet" type="text/css" href="style_tombe.css" />
+        <title>Stratégie Tombe de Sargeras : Maîtresse Sass'zine</title>
+    </head>
+
+    <body>
+		<div w3-include-html="./liens_boss.html"></div> 
+
+		<script>
+			w3.includeHTML();
+		</script>
+	
+        <!-- Corps de la page -->
+		<h1 id="sass_title">Maîtresse Sass'zine</h1>
+		
+		<div class="boss_intro">
+			<h3>Quatrième boss du raid, 3 phases, la P3 combine les techniques de P1 et P2.</h3>
+			<span class="loot_tier20"><img src="./img/icon/loot.png" title="Drop une pièce de set"/> Drop les Jambières T20</span>
+		</div>
+		
+		<div class="generalites_combat">
+			En P1 (100->70%) : gestion des adds, d'un débuff, d'un dispell et esquive des tornades.
+			<br/>En P2 (70->30%) : esquive d'une zone qui traverse la salle (style P2 Tichondrius), apporter les débuffs à un add pour le faire partir.
+			<br/>En P3 (30->0%) :  P1 + P2, beaucoup de choses à gérer et débuff qui ne peuvent pas être enlevés = il faut finir le boss très vite.
+			<br/>L'utilisation de la BloodLust en P3 est donc certainement une bonne option.
+			<!--<details>
+				<summary>Afficher le positionnement :</summary>
+				<fieldset>
+					<img class="generalites_img" src="./img/harjatan/harjatan_position.jpg"/>
+				</fieldset>
+			</details>-->
+		</div>
+		
+		<details>
+			<summary>Résumé :</summary>
+			<fieldset>
+				<ul>
+					<li>Tank-swap à chaque Fardeau de douleur.</li>
+					<li>Les murlocs et les serpents peuvent être cut et contrôlés.</li>
+					<li>Les murlocs doivent être tués immédiatement.</li>
+					<li>Les serpents doivent être tués juste avant que les tornades arrivent.</li>
+					<li>Si vous avez un débuff Faim dévorante, placez-vous sous les méduses.</li>
+					<li>2 joueurs pour encaisser chaque Tir de l'hydre, pas plus.</li>
+					<li>Ne pas encaisser 2 tirs à la suite.</li>
+					<li>Esquiver la zone avec des bulles.</li>
+					<li>Nourrir la baleine avec 3 encres.</li>
+					<li>Faire durer la P3 le moins longtemps possible.</li>
+				</ul>
+			</fieldset>
+		</details>
+		
+		<div class="technique" id="sass_fardeau_douleur">
+			<div class="technique_detail">
+			Première technique <span class="technique_phase">(P1, 2, 3)</span> : <span class="technique_detail_nom">Fardeau de douleur. </span></span><img src="./img/icon/tank.png" title="Technique de tanking"/>
+			</div>
+			<p>Place un débuff sur le main-tank. Ce débuff dure 1 minute et inflige des dégâts d'Ombre.
+			<br/>De plus, tous les dégâts physiques que prend le tank sont répercutés sur tout le raid.
+			<br/>Le tank qui a ce débuff doit donc laisser le boss à l'autre tank et s'occuper des adds (ils n'infligent pas de dégâts physiques)
+			</p>
+			<!--<img class="technique_image" src="./img/sass/sass_fardeau_douleur.jpg"/>-->
+		</div>
+		
+		<div class="technique" id="sass_fond_abysses">
+			<div class="technique_detail">
+			Deuxième technique <span class="technique_phase">(P1, 2, 3)</span> : <span class="technique_detail_nom">Du fond des abysses. </span>
+			</div>
+			<p>Fait apparaître trois Traqueurs des abysses, qui seront tankés par l'off-tank.
+			<br/>Les adds peuvent être stun / slow / grip, etc.
+			<br/>Quand ils meurent ils laissent une AOE qui fait des dégâts et réduit de 75% les chances de toucher, il faut donc en sortir immédiatement.
+			<br/>Ces adds doivent être cleave sur le boss <span class="attention_nb">et mourir juste avant que les <a href="#sass_tornades_tranchantes" class="technique_link">Tornades Tranchantes</a> arrivent, car l'AOE qu'ils laissent aide à passer à travers les Tornades.</span>
+			</p>
+			<img class="technique_image" src="./img/sass/sass_fond_abysses.jpg"/>
+		</div>
+		
+		<div class="technique" id="sass_tir_hydre">
+			<div class="technique_detail">
+			Troisième technique <span class="technique_phase">(P1, 2, 3)</span> : <span class="technique_detail_nom">Tir de l'hydre. </span>
+			</div>
+			<p>Marque plusieurs joueurs d'une flèche au-dessus de leur personnage, et indique la direction des tirs avec des flèches devant le boss.
+			<br/>Après 6 secondes, les joueurs marqués subissent de gros dégâts physiques, qui sont divisés entre tous les personnages sur la trajectoire.
+			<br/>Les joueurs touchés par les dégâts reçoivent le débuff "Acide d'hydre" pendant 6 secondes. S'ils reçoivent un autre tir avec ce débuff, ils seront stun 6 secondes.
+			<br/>Le tank qui a le débuff <a href="#sass_fardeau_douleur" class="technique_link">Fardeau de douleur</a> doit faire attention à ne pas être touché par les tirs.
+			<br/><br/>
+			<span class="attention_nb">Les joueurs marqués doivent s'écarter les uns des autres pour qu'un autre joueur vienne se placer devant chacun d'eux pour lisser les dégâts. Attention à ce qu'il n'y ait pas trop de monde à la fois qui absorbe pour que tout le raid ne se retrouve pas avec le débuff !</span>
+			</p>
+			<img class="technique_image" src="./img/sass/sass_tir_hydre.jpg"/>
+		</div>
+		
+		<div class="technique" id="sass_tornades_tranchantes">
+			<div class="technique_detail">
+			Quatrième technique <span class="technique_phase">(P1, P3)</span> : <span class="technique_detail_nom">Tornades Tranchantes. </span>
+			</div>
+			<p>Sass'zine invoque une rangée de tornades qui vont traverser la salle. Les personnages touchés par les tornades subissent un DOT très violent.
+			<br/>Les tornades sont fortement ralenties par les AOE laissées à la mort des <a href="#sass_fond_abysses" class="technique_link">Traqueurs des abysses</a>, ceux-ci doivent donc mourir juste avant que les tornades arrivent. 
+			<br/>Le fonctionnement est donc similaire aux Anneaux de la Grand Magistrice Elisande.
+			</p>
+			<img class="technique_image" src="./img/sass/sass_tornades_tranchantes.jpg"/>
+		</div>
+		
+		<div class="technique" id="sass_faim_devorante">
+			<div class="technique_detail">
+			Cinquième technique <span class="technique_phase">(P1, P3)</span> : <span class="technique_detail_nom">Faim dévorante. </span>
+			</div>
+			<p>Place un débuff sur un ou plusieurs joueurs aléatoires. Ce débuff inflige des dégâts et est permanent !
+			<br/>Le seul moyen de l'enlever est de se tenir sous les méduses qui vont apparaître tout au long de la P1 et qui après quelques secondes vont exploser en AOE.
+			<br/>Cette AOE enlève le débuff mais stun pendant 4 secondes ! Les joueurs stun peuvent être dispell par les heal / dispell de masse.
+			<br/><br/>
+			<span class="attention_nb">Chaque débuff qui est enlevé des personnages va faire spawn un murloc qui va caster en continu. Les murlocs doivent être contrôlés et sont la priorité des DPS !</span>
+			<br/><br/>
+			<span class="attention_nb">Les méduses n'apparaissent qu'en P1, le raid doit donc veiller à ce qu'aucun débuff ne soit présent lorsque le boss passe sous les 70% de PV.</span>
+			<br/><br/>
+			<span class="attention_nb">En P3 Sass'zine place à nouveau des débuffs mais il n'y a plus de méduses, cette technique agit donc comme un soft-enrage.</span>
+			</p>
+			<img class="technique_image" src="./img/sass/sass_faim_devorante.jpg"/>
+		</div>
+		
+		<div class="transition_phase" id="sass_transi_p1_p2">
+			<p>
+				A 70% HP, Sass'zine passe en P2. 
+				<br/>
+				Il n'y a plus de <a href="#sass_tornades_tranchantes" class="technique_link">Tornades</a> ni de méduses, et aucun nouveau débuff <a href="#sass_faim_devorante" class="technique_link">Faim dévorante</a> n'est placé, mais ceux qui n'ont pas été enlevés restent.
+				<br/>
+				Les tanks doivent toujours gérer le <a href="#sass_fardeau_douleur" class="technique_link">Fardeau de douleur</a> et les adds du <a href="#sass_fond_abysses" class="technique_link">Fond des abysses</a> ; et les autres joueurs doivent toujours gérer le <a href="#sass_tir_hydre" class="technique_link">Tir de l'hydre</a>.
+				<br/>
+				3 nouvelles techniques se rajoutent.
+			</p>
+		</div>
+		
+		<div class="technique" id="sass_appel_vellius">
+			<div class="technique_detail">
+			Sixième technique <span class="technique_phase">(P2, P3)</span> : <span class="technique_detail_nom">Appel de Vellius. </span>
+			</div>
+			<p>Fait apparaître une zone d'eau agitée qui traverse toute la salle (dans le même genre que lors de la P2 de Tichondrius).
+			<br/>Après quelques instants, un add traverse la salle en suivant cette ligne et repousse les joueurs qu'il croise en leur infligeant des dégâts.
+			</p>
+			<img class="technique_image" src="./img/sass/sass_appel_vellius.jpg"/>
+		</div>
+		
+		<div class="technique" id="sass_invoc_ossunet">
+			<div class="technique_detail">
+			Septième technique <span class="technique_phase">(P2, P3)</span> : <span class="technique_detail_nom">Invocation d'Ossunet. </span>
+			</div>
+			<p>Fait régulièrement apparaître des AOE d'Encre répugnante au sol. Marcher dessus donne un débuff de 10 sec qui inflige des dégâts et réduit la vitesse de déplacement de 25%.
+			</p>
+			<!--<img class="technique_image" src="./img/sass/sass_invoc_ossunet.jpg"/>-->
+		</div>
+		
+		<div class="technique" id="sass_signe_sarukel">
+			<div class="technique_detail">
+			Huitième technique <span class="technique_phase">(P2, P3)</span> : <span class="technique_detail_nom">Signe à Sarukel. </span>
+			</div>
+			<p>Fait apparaître une <a class="lien_cache" href="http://www.journaldugeek.com/files/2014/03/Baleine.jpg">grosse baleine</a> sur un côté de la pièce, qui attire les joueurs (comme l'effet de souffle sur Gul'Dan ou Dresaron au Fourré Sombrecoeur) et inflige des dégâts à tout le raid toutes les 2 secondes. Si un joueur se trouve à moins de 15 mètres de la baleine, il est dévoré et tué.
+			<br/>Pour la faire disparaître, il faut la nourrir de 3 Encre répugnante.
+			<br/>3 joueurs doivent donc passer dans une AOE pour obtenir le débuff et s'approcher de la baleine pour qu'elle l'absorbe.
+			<br/><br/>
+			<span class="attention_nb">Cette technique doit être gérée le plus rapidement possible, car le mouvement gêne fortement l'exécution des autres techniques.</span>
+			</p>
+			<img class="technique_image" src="./img/sass/sass_signe_sarukel.jpg"/>
+		</div>
+		
+		<div class="transition_phase" id="sass_transi_p1_p2">
+			<p>
+				A 30% HP, Sass'zine passe en P3. 
+				<br/>
+				Les tanks doivent toujours gérer le <a href="#sass_fardeau_douleur" class="technique_link">Fardeau de douleur</a> et les adds du <a href="#sass_fond_abysses" class="technique_link">Fond des abysses</a> ; et les autres joueurs doivent toujours gérer le <a href="#sass_tir_hydre" class="technique_link">Tir de l'hydre</a>.
+				<br/>
+				<a href="#sass_appel_vellius" class="technique_link">L'appel de Vellius</a> continue à apparaître, ainsi que <a href="#sass_signe_sarukel" class="technique_link">Sarukel</a>.
+				<br/>
+				En plus de cela, le boss récupère les techniques <a href="#sass_tornades_tranchantes" class="technique_link">Tornades tranchantes</a> et <a href="#sass_faim_devorante" class="technique_link">Faim dévorante</a>, mais pas les méduses ; les débuffs ne peuvent donc plus être retirés et vont servir de soft-enrage.
+				<br/>
+				Cette phase doit donc être expédiée au plus vite.
+			</p>
+		</div>
+		
+		<div class="technique" id="sass_sombres_profondeurs">
+			<div class="technique_detail">
+			Mode Héroïque <span class="technique_phase">(P1, 2, 3)</span> : <span class="technique_detail_nom">Sombres profondeurs. </span>
+			<img class="technique_heroic_only" src="./img/icon/heroic.png" title="Seulement en difficulté Héroïque"/>
+			</div>
+			<p>En mode de difficulté héroïque, les adds de <a href="#sass_fond_abysses" class="technique_link">Fond des abysses</a> vont lancer des casts de Sombres Profondeurs, ce qui a pour effet de les téléporter sur un membre du raid au hasard et de lui infliger des dégâts.
+			<br/>Pour garder le contrôle des adds il faut donc couper ces casts au maximum, et lorsqu'ils sont bas en vie utiliser des sorts de contrôle pour que l'AOE qu'ils laissent soit positionné stratégiquement.
+			</p>
+			<img class="technique_image" src="./img/sass/sass_sombres_profondeurs.jpg"/>
+		</div>
+		
+		<div class="fin_page"></div>
+    </body>
+</html>

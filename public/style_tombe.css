@@ -32,6 +32,10 @@ details {
 	margin: 0px;
 }
 
+.technique {
+	margin-top: 40px;
+}
+
 .technique_detail {
 	border-bottom: 1px solid #666;
 	margin-top: 20px;
@@ -45,10 +49,34 @@ details {
 	margin-left: 50px;
 }
 
+.technique_phase {
+	background-color: lightblue;
+}
+
 .attention_nb {
-	background: lightgreen;
+	background-color: lightgreen;
+}
+
+.transition_phase {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	padding-left: 30px;
+	background-color: lightyellow;
+	border: 2px solid #666;
+	font-size: 130%;
 }
 
 .fin_page {
-	margin-bottom: 300px;
+	margin-bottom: 400px;
+}
+
+.loot_tier20 img {
+	height: 22px;
+	width: 22px;
+}
+
+.lien_cache {
+	text-decoration: none;
+	color: black;
+	font-style: italic;
 }
