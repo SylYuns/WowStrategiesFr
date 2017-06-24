@@ -25,11 +25,10 @@
 		</div>
 		
 		<div class="generalites_combat">
-			<br/>En P1 (100->30%) : Les deux boss partagent leurs PVs ; gestion des adds, de débuffs, etc.
-			<br/>Deux joueurs dans deux Royaumes différents ne peuvent pas se heal entre eux.
-			<br/>Le tank avec la meilleure résistance magique devrait s'occuper du monde des Esprits (tank la Reine des âmes).
-			<br/>En P2 (30->0%) :  Monocible sur le boss, petite danse autour de lui OKLM, soft-enrage avec dégâts progressifs.
-			<br/>Utilisation de la BloodLust en P2.
+			<br/>En P1 : se placer du bon côté du raid par rapport à son débuff.
+			<br/>Avec la bombe sur la tête, sauter dans le trou quand il reste ~1.5sec.
+			<br/>En P2 :  se stack et ramasser un max d'orbes, puis tomber le shield et interrompre le cast.
+			<br/>La BL peut être utilisée au pull ou après le ramassage d'orbes (potentiellement +100% dégâts).
 			<!--<details>
 				<summary>Afficher le positionnement :</summary>
 				<fieldset>
@@ -41,203 +40,75 @@
 		<details>
 			<summary>Résumé :</summary>
 			<fieldset>
-				<ul>
-					<li>Focus les adds.</li>
-					<li>Les joueurs liés vont l'un sur l'autre.</li>
-					<li>Dispell les chaînes de l'esprit.</li>
-					<li>Interrompre le Cri fracassant, sauf quand les adds corporels ont le buff d'armure.</li>
-					<li>Faire exploser le Cri fracassant sur les adds avec le buff d'armure pour le retirer.</li>
-					<li>Les distants du Royaume Corporel sont éloignés les uns des autres.</li>
-					<li>Attention au placement de l'AOE d'ombre en cône.</li>
-					<li>P2 balancer les CDs DPS. Garder les CDs Heal pour la fin du combat car les dégâts augmentent.</li>
-					<li>Les deux groupes chacun leur tour vont se mettre au CàC du boss puis s'éloigner.</li>
-				</ul>
+				Lit les techniques sale feignasse !
 			</fieldset>
 		</details>
 		
-		<div class="technique" id="hote_royaumes">
+		<div class="technique" id="maiden_infusion">
 			<div class="technique_detail">
-			Méchanique spéciale : <span class="technique_detail_nom">Royaume Corporel / Royaume des Esprits.</span>
+			Méchanique spéciale : <span class="technique_detail_nom">Infusion.</span>
 			</div>
-			<p>En arrivant dans la salle, le raid est dans le Royaume Corporel.
-			<br/><br/>Des vases (?) sont placés tout autour de la salle pour passer d'un Royaume à l'autre.
-			<br/><br/>Pendant toute le combat (à l'exception d'une technique), la moitié du raid doit être en Corporel, l'autre en Esprits.
-			<br/><br/>Les joueurs dans un royaume ne peuvent pas interragir avec ceux de l'autre royaume (par exemple pas possible de heal)
+			<p>Au début du combat et à chaque retour en  P1, chaque joueur va recevoir soit un Infusion de Lumière, soit une Infusion Gangrenée.
+			<br/><br/>Si un joueur avec un type d'infusion reçoit des dégâts de l'autre type, ou si deux joueurs avec des Infusions différentes sont trop proches, ils reçoivent <a href="#maiden_ame_instable" class="technique_link">Âme instable</a>.
+			<br/><br/>Le raid sera donc séparé en deux, de chaque côté du boss, en fonction du débuff reçu.
 			</p>
-			
+			<img class="technique_image" src="./img/maiden/maiden_infusion.jpg"/>
 		</div>
 		
-		<div class="technique" id="hote_lien_ame">
+		<div class="technique" id="maiden_ame_instable">
 			<div class="technique_detail">
-			Première technique : <span class="technique_detail_nom">Lien de l'âme. </span>(Les deux Royaumes.)
+			Méchanique spéciale : <span class="technique_detail_nom">Âme instable.</span>
 			</div>
-			<p>Place un débuff sur un joueur au hasard de chaque Royaume.
-			<br/>Les deux joueurs doivent se coller l'un à l'autre pour faire disparaître le débuff.
-			<br/>Un marqueur sera donc positionné avant le combat pour indiquer le lieu de rencontre.
+			<p>Le débuff Âme instable est un débuff de 8 secondes qui inflige des dégâts au joueur et provoque une énorme explosion à la fin des 8 secondes.
+			<br/><br/>Cette explosion peut être contrôlée en sautant dans le trou au centre de la salle.
+			<br/><br/>L'explosion provoque un "knock up", il faut donc sauter au bon moment pour que le bump vous ramène sur la plateforme.
+			<br/><br/>Le bon timing est de sauter à environ ~1.5 secondes restantes sur le debuff (demandez une WeakAura).
 			</p>
-			<img class="technique_image" src="./img/hote/hote_lien_ame.jpg"/>
+			<img class="technique_image" src="./img/maiden/maiden_ame_instable.jpg"/>
 		</div>
 		
-		<div class="transition_phase" id="hote_royaume_esprit">
+		<div class="technique" id="maiden_marteaux">
+			<div class="technique_detail">
+			Première technique : <span class="technique_detail_nom">Marteau de création / Marteau d'oblitération</span>
+			</div>
+			<p>La technique Marteau de création est toujours utilisé en premier, et inflige des dégâts de Lumière, le tank avec l'Infusion de Lumière doit donc tanker en premier, et une fois la technique passée, tank swap.
+			<br/>Les deux techniques infligent des dégâts en forme de cône qui sont répartis entre tous les joueurs touchés, il faut donc aider à absorber les dégâts.
+			<br/>Après avoir frappé, les techniques laissent une AOE, donc il faut vite bouger.
+			<br/>Ces AOEs vont diminuer au fur et à mesure et des petites AOEs vont être envoyées sur tout le raid, qu'il faut esquiver.
+			</p>
+			<img class="technique_image" src="./img/maiden/maiden_marteaux.jpg"/>
+		</div>
+		
+		<div class="transition_phase" id="maiden_p2">
 			<p>
-				Dans le Royaume des Esprits :
+				Au bout de 45 secondes, passage en P2.
+				<br/>La Damoiselle va se téléporter de l'autre côté de la salle et stun les joueurs pendant quelques secondes.
+				<br/>Elle va commencer un cast de ~30 secondes qui inflige des dégâts réguliers ; s'il n'est pas interrompu tout le monde est OS.
+				<br/>En plus de cela, elle gagne un énorme bouclier qui empêche l'interruption et doit donc être détruit au plus vite.
 			</p>
 		</div>
 		
-		<div class="technique" id="hote_ames_gemissantes">
+		<div class="technique" id="maiden_fragments">
 			<div class="technique_detail">
-			Deuxième technique : <span class="technique_detail_nom">Âmes gémissantes. </span>(Royaume des esprits.)
+			Deuxième technique : <span class="technique_detail_nom">Fragments d'essence. </span>
 			</div>
-			<p>Pendant 1 minute, la Reine des Âmes va caster un sort infligeant des dégâts à tous les personnages présents dans le Royaume des Esprits.
-			<br/>Si tous les adds du Royaume des Esprits sont tués, les joueurs peuvent rejoindre le Royaume Corporel jusqu'à la fin de ce cast pour éviter les dégâts.
-			<br/>Le tank et un heal doivent rester dans le Royaume des Esprits.
-			</p>
-		</div>
-		
-		<div class="technique" id="hote_reliquat">
-			<div class="technique_detail">
-			Troisième technique : <span class="technique_detail_nom">Reliquat d'âme. </span>(Royaume des esprits.)
-			</div>
-			<p>Trois reliquats d'âmes vont être invoqués et doivent être tankés.
-			<br/>De la pourriture apparaît en AOE là où ils se déplacent, et à leur mort ils provoquent une explosion en AOE.
+			<p>La Damoiselle va envoyer 12 vagues d'orbes, avec 3 orbes par vague. Chaque orbe est soit de Lumière soit Gangrenée.
+			<br/><br/>Les joueurs qui absorbent un orbe correspondant à leur infusion reçoivent un buff de 30 secondes qui augmente les dégâts de 10% et les heals de 5% (stackable 10 fois).
 			<br/><br/>
-			<span class="attention_nb">Les Reliquats d'âme doivent donc être contrôlés et tués le plus vite possible.</span>
+			<span class="attention_nb">Le buff est également appliqué aux joueurs proches, les deux groupes doivent donc se stacker et rammasser le maximum d'orbes de leur couleur.</span>
 			</p>
-			<img class="technique_image" src="./img/hote/hote_reliquat.jpg"/>
+			<img class="technique_image" src="./img/maiden/maiden_fragments.jpg"/>
 		</div>
 		
-		<div class="technique" id="hote_chaine_esprit">
-			<div class="technique_detail">
-			Quatrième technique : <span class="technique_detail_nom">Chaînes d'esprit. </span>(Royaume des esprits.)
-			</div>
-			<p>Deux Prêtresses vont également être invoquées et placeront un débuff "Chaîne d'esprit" sur des joueurs aléatoires (dans le Royaume des esprits), qui inflige des dégâts et réduit la vitesse de déplacement de 50%.
-			<br/>Ce débuff peut être dispell et doit donc l'être rapidement.
-			</p>
-		</div>
-		
-		<div class="technique" id="hote_cri_fracassant">
-			<div class="technique_detail">
-			Cinquième technique : <span class="technique_detail_nom">Cri fracassant. </span>(Royaume des esprits.)
-			</div>
-			<p>Les Prêtresses lancent également une canalisation de Cri fracassant, qui inflige des dégâts à la cible pendant le cast, et provoque une explosion à l'emplacement du joueur si le cast va jusqu'au bout.
-			<br/>Ce sort peut être interrompu, et doit l'être aussi souvent que possible.
-			<br/><br/>Toutefois, des adds du Royaume Corporel vont gagner un buff <a href="#hote_armure_thoracique" class="technique_link">Armure Thoracique</a> qui réduit les dégâts subis de 95%.
-			<br/><br/>Ce buff peut être retiré en provoquant l'explosion de la fin du sort sur ces adds.
-			<br/><br/>Lorsque les adds gagnent ce débuff, le tank du Royaume Corporel doit donc demander aux joueurs visés par le sort de venir sur les adds.
-			<br/><br/>
-			<span class="attention_nb">La canalisation ne doit donc pas être interrompue quand les adds ont le buff !</span>
-			<br/><br/>
-			<span class="attention_nb">Attention à ne pas tuer les Prêtresses tant que les adds n'ont pas perdu le buff !</span>
-			</p>
-		</div>
-		
-		<div class="transition_phase" id="hote_royaume_esprit">
+		<div class="transition_phase" id="maiden_transi_p1">
 			<p>
-				Dans le Royaume Corporel :
+				Une fois le sort interrompu, on repasse en P1, et la Damoiselle relance l'Infusion, il faut donc immédiatement se replacer du bon côté.
+				<br/>A partir de la deuxième P1, les P1 durent 1min30 et non plus 45 secondes.
+				<br/>Attention, elle relance tout de même une infusion au bout de 45 secondes, et il faut donc se replacer.
 			</p>
 		</div>
 		
-		<div class="technique" id="hote_effondrement_fissures">
-			<div class="technique_detail">
-			Sixième technique : <span class="technique_detail_nom">Effondrement de fissures. </span>(Royaume corporel.)
-			</div>
-			<p>Le moteur d'âme va régulièrement marquer une zone autour d'un joueur distant, infligeant des dégâts AOE pendant 1 min 30.
-			<br/>Les distants doivent donc être bien espacés les uns des autres et éloignés autant que possible pour ne pas faire apparaître d'AOE au milieu du raid.
-			</p>
-		</div>
-		
-		<div class="technique" id="hote_cri_tourmenté">
-			<div class="technique_detail">
-			Septième technique : <span class="technique_detail_nom">Cris tourmentés. </span>(Royaume corporel.)
-			</div>
-			<p>Le moteur d'âme va marquer un joueur et après 5 secondes va lancer une AOE en forme de cône en direction du joueur et de la longueur de toute la salle.
-			<br/>Cette zone va rester pendant 35 secondes et les joueurs qui restent dedans subissent des dégâts et sont silence.
-			<br/>Le joueur marqué doit donc bien positionner la zone pour qu'elle ne gêne pas le raid.
-			<br/>Aux casts suivants, les zones doivent être positionnées le plus proche possible les unes des autres pour éviter de prendre trop de place.
-			</p>
-		</div>
-		
-		<div class="technique" id="hote_armure_thoracique">
-			<div class="technique_detail">
-			Huitième technique : <span class="technique_detail_nom">Armure Thoracique. </span>(Royaume corporel.)
-			</div>
-			<p>Un Templier réanimé et deux Gardes squelettes ignobles vont être invoqués.
-			<br/>A 50% PV, ils gagnent le buff Armure Thoracique, qui réduit les dégâts subis de 95%.
-			<br/><br/>Le seul moyen de retirer ce buff est de provoquer l'explosion de la fin du sort <a href="#hote_cri_fracassant" class="technique_link">Cri fracassant</a> sur les adds.
-			<br/><br/>
-			<span class="attention_nb">Le tank doit donc dire quand ce buff apparait pour que les joueurs visés par le sort viennent sur les adds.</span>
-			</p>
-		</div>
-		
-		<div class="transition_phase" id="hote_transi_p1_p2">
-			<p>
-				A 30% PV, le moteur des âmes se transforme en Hôte Désolé et vient au milieu de la salle.
-				<br/>
-				Tous les adds doivent être tués avant de passer en P2.
-				<br/>
-				La Reine des âmes est toujours présente et doit être tuée au plus vite.
-				<br/>
-				Les dégâts du boss vont augmenter au fur et à mesure, donc BloodLust et on envoie la sauce béarnaise (malgré les nombreux déplacements nécessaires).
-			</p>
-		</div>
-		
-		<div class="technique" id="hote_mort_fracturante">
-			<div class="technique_detail">
-			Première technique : <span class="technique_detail_nom">Mort Fracturante. </span>
-			</div>
-			<p>Inflige de gros dégâts aux joueurs du Royaume Corporel. Ceux-ci doivent venir au CàC du boss, sinon il va gagner un stack de dégâts.
-			<br/>Inflige des dégâts fatals aux joueurs du Royaume des esprits. Toutefois, les dégâts sont réduits avec la distance. Les joueurs du Royaume des esprits doivent donc s'éloigner au maximum.
-			</p>
-		</div>
-		
-		<div class="technique" id="hote_fracture_mortelle">
-			<div class="technique_detail">
-			Première technique : <span class="technique_detail_nom">Fracture mortelle. </span>
-			</div>
-			<p>Inflige de gros dégâts aux joueurs du Royaume des esprits. Ceux-ci doivent venir au CàC du boss, sinon il va gagner un stack de dégâts.
-			<br/>Inflige des dégâts fatals aux joueurs du Royaume Corporel. Toutefois, les dégâts sont réduits avec la distance. Les joueurs du Royaume Corporel doivent donc s'éloigner au maximum.
-			</p>
-		</div>
-		
-		<h3>Bien différencier les deux techniques si vous avez un doute :</h3>
-		<details>
-			<summary>Clic pour afficher :</summary>
-			<fieldset>
-				<p>
-				Quand l'AOE autour du boss a des bords bien définis, c'est que vous devez aller au Cac pour aider à répartir les dégâts :
-				<br/>
-				<img class="technique_image" src="./img/hote/hote_cac.jpg"/>
-				<br/><br/>
-				Au contraire, lorsque l'AOE est en forme de tourbillon, vous devez vous éloigner le plus possible :
-				<p/>
-				<img class="technique_image" src="./img/hote/hote_loin.jpg"/>
-			</fieldset>
-		</details>
-		
-		<div class="technique technique_heroic" id="hote_heroic_fletrissement">
-			<div class="technique_detail">
-			Mode Héroïque : <span class="technique_detail_nom">Flétrissement. </span>
-			<img class="technique_heroic_only" src="./img/icon/heroic.png" title="Seulement en difficulté Héroïque"/>
-			</div>
-			<p>En mode de difficulté héroïque, la Reine des âmes va placer le débuff Flétrissement sur des joueurs au hasard.
-			<br/>Ce débuff inflige des dégâts d'ombre et augmente de 100% les dégâts reçus d'<a href="#hote_ames_gemissantes" class="technique_link">Âmes gémissantes</a>.
-			<br/><br/>
-			<span class="attention_nb">Si le heal qui est désigné pour rester dans le Royaume des Esprits pendant Âmes gémissantes reçoit ce débuff, un autre heal doit prendre sa place.</span>
-			</p>
-		</div>
-		
-		<div class="technique" id="hote_heroic_lance">
-			<div class="technique_detail">
-			Mode Héroïque : <span class="technique_detail_nom">Lance d'angoisse. </span>
-			<img class="technique_heroic_only" src="./img/icon/heroic.png" title="Seulement en difficulté Héroïque"/>
-			</div>
-			<p>En mode de difficulté héroïque, le moteur des âmes va placer le débuff Lance d'angoisse sur un joueur au hasard.
-			<br/>Au bout de 6 secondes, ce débuff va infliger des dégâts d'ombre en AOE et faire passer les joueurs touchés dans le Royaume des Esprits.
-			<br/>Les joueurs touchés reçoivent également un absorb shield qui les empêche de retourner dans le Royaume Corporel. Ce shield doit donc être overheal pour que le joueur retourne dans le bon Royaume.
-			<br/><br/>
-			<span class="attention_nb">Attention, l'AOE ne doit pas toucher d'autre joueur sinon ça peut vite être le bordel !</span>
-			</p>
-		</div>
+
 		
 		<div class="fin_page"></div>
     </body>

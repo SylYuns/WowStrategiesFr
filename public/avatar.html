@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html>
+	<script src="https://www.w3schools.com/lib/w3.js"></script>
+	
+    <head>
+        <!-- En-tête de la page -->
+        <meta charset="iso-8859-1" />
+		<link rel="stylesheet" type="text/css" href="style_tombe.css" />
+        <title>Stratégie Tombe de Sargeras : Avatar déchu</title>
+    </head>
+
+    <body>
+		<div w3-include-html="./liens_boss.html"></div> 
+
+		<script>
+			w3.includeHTML();
+		</script>
+	
+        <!-- Corps de la page -->
+		<h1 id="sass_title">Avatar déchu</h1>
+		
+		<div class="boss_intro">
+			<h3>Huitième boss du raid, P2 à 100 d'énergie, la P2 doit être retardée le plus possible.</h3>
+			<span class="loot_tier20"><img src="./img/icon/loot.png" title="Drop une pièce de set"/> Drop les Epaules T20</span>
+		</div>
+		
+		<div class="generalites_combat">
+			<br/>En P1 : NE PAS FAIRE DE DEGATS A LA DAMOISELLE EN DEHORS DE SON SHIELD.
+			<br/>S'éloigner du boss pour la rupture, esquiver les AOEs, etc.
+			<br/>Le boss doit passer en P2 avec le moins de vie possible.
+			<br/>En P2 :  Le boss détruit une grosse portion de la zone à chaque Rupture.
+			<br/>La BL doit être utilisée au pull pour descendre la vie du boss au max.
+			<!--<details>
+				<summary>Afficher le positionnement :</summary>
+				<fieldset>
+					<img class="generalites_img" src="./img/avatar/avatar_position.jpg"/>
+				</fieldset>
+			</details>-->
+		</div>
+		
+		<details>
+			<summary>Résumé :</summary>
+			<fieldset>
+				Lit les techniques sale feignasse !
+			</fieldset>
+		</details>
+		
+		<div class="technique" id="avatar_maiden">
+			<div class="technique_detail">
+			Méchanique spéciale : <span class="technique_detail_nom">Damoiselle de Valeur.</span>
+			</div>
+			<p>L'avatar va essayer de gagner de l'énergie en activant un des cinq pylônes.
+			<br/><br/>L'énergie du pylone peut et doit être interceptée par la Damoiselle.
+			<br/><br/>Cela va augmenter ses dégâts et lui faire cast Protocole de purification, un cast de 20 secondes qui tue tout le raid s'il arrive au bout.
+			<br/><br/>En même temps elle gagne un bouclier d'absorption de dégâts, quand celui-ci est détruit la Damoiselle est stun, ce qui arrête son cast et lui enlève 25% de PVs.
+			<br/><br/>
+			<span class="attention_nb">Il faut donc détruire son shield au plus vite !</span>
+			<br/><br/>
+			<span class="attention_nb">En dehors de son cast la Damoiselle doit prendre ZERO DEGATS pour être certains qu'elle pourra intercepter 4 rayons. Donc ne placez pas de DoTs sur elle !</span>
+			</p>
+			<img class="technique_image" src="./img/avatar/avatar_maiden.jpg"/>
+			<img class="technique_image" src="./img/avatar/avatar_maiden2.jpg"/>
+		</div>
+		
+		<div class="technique" id="avatar_desolation">
+			<div class="technique_detail">
+			Première technique <span class="technique_phase">(P1, P2)</span> : <span class="technique_detail_nom">Désolation. </span>
+			<img src="./img/icon/tank.png" title="Technique de tanking"/></div>
+			<p>L'Avatar frappe le tank avec Désolation, ce qui inflige de gros dégâts physiques et augmente de 50% les dégâts subis par la prochaine Désolation.
+			<br/>Les tanks doivent swap tous les 2 stacks.
+			<span class="attention_nb">Le tank qui n'est pas sur l'Avatar doit tanker la Damoiselle loin du CaC pour qu'elle ne prenne pas de dégâts inutiles !</span>
+			</p>
+			<!--<img class="technique_image" src="./img/goroth_etoile.jpg"/>-->
+		</div>
+		
+		<div class="technique" id="avatar_rupture">
+			<div class="technique_detail">
+			Deuxième technique : <span class="technique_detail_nom">Rupture des réalités</span>
+			</div>
+			<p>Inflige d'énormes dégâts au raid, qui diminuent avec la distance.
+			<br/>Tous les joueurs doivent donc s'éloigner, au moins de la moitié de la taille de la salle.
+			<br/>Le tank assigné au boss doit ensuite vite retourner au CaC sinon l'Avatar va immédiatement lancer de grosses vagues de dégâts.
+			</p>
+			<img class="technique_image" src="./img/avatar/avatar_rupture.jpg"/>
+		</div>
+		
+		<div class="technique" id="avatar_chaos">
+			<div class="technique_detail">
+			Troisième technique : <span class="technique_detail_nom">Chaos délié</span>
+			</div>
+			<p>Place un débuff de 2 secondes sur tous les membres du raid, qui fait apparaître une AOE sous chaque joueur. L'AOE explose après 1.5 secondes.
+			<br/><br/>
+			<span class="attention_nb">Tous les joueurs doivent donc se déplacer en essayant d'étaler leurs AOEs le moins possible (comme sur Etraeus).</span>
+			</p>
+			<img class="technique_image" src="./img/avatar/avatar_chaos.jpg"/>
+		</div>
+		
+		<div class="technique" id="avatar_lames_tenebreuses">
+			<div class="technique_detail">
+			Quatrième technique : <span class="technique_detail_nom">Lames ténébreuses</span>
+			</div>
+			<p>Fait apparaître trois Lames ténébreuses au Cac du boss, qui font fixer des joueurs aléatoires.
+			<br/>Après quelques secondes les Lames vont partir dans la direction du joueur et vont faire des dégâts sur 10 mètres de large sur toute leur trajectoire.
+			<br/>Les joueurs visés voient le rayon entre eux et la lame, mais le reste du raid ne voit que les lames et doit donc faire attention à la direction dans laquelle elles sont tournées pour ne pas être en face.
+			</p>
+			<img class="technique_image" src="./img/avatar/avatar_lames_tenebreuses.jpg"/>
+		</div>
+		
+		<div class="transition_phase" id="avatar_p2">
+			<p>
+				Quand il atteint 100 d'énergie, l'Avatar passe en P2.
+				<br/>Il va briser le sol et le raid va tomber sur une plateforme entourée de lave.
+				<br/>La plateforme va être cassée au fur et à mesure jusqu'à totalement disparaître, cette phase doit donc être courte, il faut donc que le boss soit le plus bas en PV possible lorsqu'il passe en P2.
+				<br/>En passant en P2 il absorbe les PVs restant de la Damoiselle, celle-ci doit donc avoir été tuée avant.
+				<br/>L'Avatar continue à lancer Désolation sur le tank.
+			</p>
+		</div>
+		
+		<div class="technique" id="avatar_rupture_p2">
+			<div class="technique_detail">
+			Première technique : <span class="technique_detail_nom">Rupture des réalités</span>
+			</div>
+			<p>Fonctionne plus ou moins de la même manière que la <a href="#avatar_rupture" class="technique_link">Rupture</a> en P1 (s'éloigner pour prendre moins de dégâts).
+			<br/>Cependant, à chaque cast, l'Avatar va détruire ~1/4 de la plateforme, il doit donc être positionné dans un coin.
+			</p>
+			<img class="technique_image" src="./img/avatar/avatar_rupture_p2.jpg"/>
+		</div>
+		
+		<div class="technique" id="avatar_marque_sombre">
+			<div class="technique_detail">
+			Deuxième technique : <span class="technique_detail_nom">Marque sombre</span>
+			</div>
+			<p>Place un débuff AOE sur plusieurs joueurs qui dure 6 secondes.
+			<br/>Au bout de 6 secondes la zone explose, infligeant des dégâts répartis entre tous les joueurs présents dans la zone, et les envoyant en l'air.
+			<br/>Le raid doit donc aider à répartir les dégâts, et faire attention à ce que le knock up ne les envoie pas dans la lave.
+			</p>
+			<img class="technique_image" src="./img/avatar/avatar_marque_sombre.jpg"/>
+		</div>
+		
+		<div class="technique technique_heroic" id="avatar_heroic_toucher">
+			<div class="technique_detail">
+			Mode Héroïque : <span class="technique_detail_nom">Toucher de Sargeras. </span>
+			<img class="technique_heroic_only" src="./img/icon/heroic.png" title="Seulement en difficulté Héroïque"/>
+			</div>
+			<p>En mode de difficulté héroïque en P1, plusieurs zones violettes vont apparaître dans la zone de combat, et exploser au bout de 8 secondes.
+			<br/>Si une zone explose sans joueurs à l'intérieur, cela tue tout le raid.
+			<br/>Si des joueurs sont présents dans la zone, ils encaissent des dégâts répartis entre eux.
+			<br/>Il faut donc que les joueurs se répartissent entre les différentes zones pour les soak.
+			</p>
+			<img class="technique_image" src="./img/avatar/avatar_heroic_toucher.jpg"/>
+		</div>
+		
+		<div class="technique technique_heroic" id="avatar_heroic_tenebres_remanentes">
+			<div class="technique_detail">
+			Mode Héroïque : <span class="technique_detail_nom">Ténèbres rémanentes. </span>
+			<img class="technique_heroic_only" src="./img/icon/heroic.png" title="Seulement en difficulté Héroïque"/>
+			</div>
+			<p>En mode de difficulté héroïque en P1, les <a href="#avatar_lames_tenebreuses" class="technique_link">Lames Ténébreuses</a> vont faire apparaître une AOE à l'emplacement des joueurs qu'elles touchent.
+			<br/>Les joueurs visés doivent donc faire attention à se placer à des endroits où il y a peu de monde, et les autres joueurs doivent faire très attention à la direction dans laquelle partent les Lames pour les éviter.
+			</p>
+		</div>
+		
+		<div class="technique technique_heroic" id="avatar_heroic_incandescence">
+			<div class="technique_detail">
+			Mode Héroïque : <span class="technique_detail_nom">Incandescence. </span>
+			<img class="technique_heroic_only" src="./img/icon/heroic.png" title="Seulement en difficulté Héroïque"/>
+			</div>
+			<p>En mode de difficulté héroïque en P2, l'Avatar va gagner un buff de dégâts pour chaque seconde passée dans la lave. Les tanks doivent donc être attentifs à le laisser dans la lave le moins possible.
+			</p>
+			<!--<img class="technique_image" src="./img/avatar/avatar_heroic_toucher.jpg"/>-->
+		</div>
+		
+		<div class="technique technique_heroic" id="avatar_heroic_vents">
+			<div class="technique_detail">
+			Mode Héroïque : <span class="technique_detail_nom">Vents noirs. </span>
+			<img class="technique_heroic_only" src="./img/icon/heroic.png" title="Seulement en difficulté Héroïque"/>
+			</div>
+			<p>En mode de difficulté héroïque en P2, de nombreuses tornades violettes vont apparaître et traverser la zone dans des directions aléatoires.
+			<br/>Les joueurs touchés vont subir de gros dégâts et un gros DoTs de 12 secondes.
+			<br/>Les tornades doivent donc être évitées à tout prix.
+			</p>
+			<img class="technique_image" src="./img/avatar/avatar_heroic_vents.jpg"/>
+		</div>
+		
+		
+		
+
+		
+		<div class="fin_page"></div>
+    </body>
+</html>
