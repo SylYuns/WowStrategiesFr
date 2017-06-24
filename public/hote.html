@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<html>
+	<script src="https://www.w3schools.com/lib/w3.js"></script>
+	
+    <head>
+        <!-- En-tête de la page -->
+        <meta charset="iso-8859-1" />
+		<link rel="stylesheet" type="text/css" href="style_tombe.css" />
+        <title>Stratégie Tombe de Sargeras : Hôte Désolé</title>
+    </head>
+
+    <body>
+		<div w3-include-html="./liens_boss.html"></div> 
+
+		<script>
+			w3.includeHTML();
+		</script>
+	
+        <!-- Corps de la page -->
+		<h1 id="sass_title">Hôte Désolé</h1>
+		
+		<div class="boss_intro">
+			<h3>Sixième boss du raid, 2 phases, le raid est divisé en 2 "royaumes" (esprit/corporel).</h3>
+			<span class="loot_tier20"><img src="./img/icon/loot.png" title="Drop une pièce de set"/> Drop la Cape T20</span>
+		</div>
+		
+		<div class="generalites_combat">
+			<br/>En P1 (100->30%) : Les deux boss partagent leurs PVs ; gestion des adds, de débuffs, etc.
+			<br/>Deux joueurs dans deux Royaumes différents ne peuvent pas se heal entre eux.
+			<br/>Le tank avec la meilleure résistance magique devrait s'occuper du monde des Esprits (tank la Reine des âmes).
+			<br/>En P2 (30->0%) :  Monocible sur le boss, petite danse autour de lui OKLM, soft-enrage avec dégâts progressifs.
+			<br/>Utilisation de la BloodLust en P2.
+			<!--<details>
+				<summary>Afficher le positionnement :</summary>
+				<fieldset>
+					<img class="generalites_img" src="./img/harjatan/harjatan_position.jpg"/>
+				</fieldset>
+			</details>-->
+		</div>
+		
+		<details>
+			<summary>Résumé :</summary>
+			<fieldset>
+				<ul>
+					<li>Focus les adds.</li>
+					<li>Les joueurs liés vont l'un sur l'autre.</li>
+					<li>Dispell les chaînes de l'esprit.</li>
+					<li>Interrompre le Cri fracassant, sauf quand les adds corporels ont le buff d'armure.</li>
+					<li>Faire exploser le Cri fracassant sur les adds avec le buff d'armure pour le retirer.</li>
+					<li>Les distants du Royaume Corporel sont éloignés les uns des autres.</li>
+					<li>Attention au placement de l'AOE d'ombre en cône.</li>
+					<li>P2 balancer les CDs DPS. Garder les CDs Heal pour la fin du combat car les dégâts augmentent.</li>
+					<li>Les deux groupes chacun leur tour vont se mettre au CàC du boss puis s'éloigner.</li>
+				</ul>
+			</fieldset>
+		</details>
+		
+		<div class="technique" id="hote_royaumes">
+			<div class="technique_detail">
+			Méchanique spéciale : <span class="technique_detail_nom">Royaume Corporel / Royaume des Esprits.</span>
+			</div>
+			<p>En arrivant dans la salle, le raid est dans le Royaume Corporel.
+			<br/><br/>Des vases (?) sont placés tout autour de la salle pour passer d'un Royaume à l'autre.
+			<br/><br/>Pendant toute le combat (à l'exception d'une technique), la moitié du raid doit être en Corporel, l'autre en Esprits.
+			<br/><br/>Les joueurs dans un royaume ne peuvent pas interragir avec ceux de l'autre royaume (par exemple pas possible de heal)
+			</p>
+			
+		</div>
+		
+		<div class="technique" id="hote_lien_ame">
+			<div class="technique_detail">
+			Première technique : <span class="technique_detail_nom">Lien de l'âme. </span>(Les deux Royaumes.)
+			</div>
+			<p>Place un débuff sur un joueur au hasard de chaque Royaume.
+			<br/>Les deux joueurs doivent se coller l'un à l'autre pour faire disparaître le débuff.
+			<br/>Un marqueur sera donc positionné avant le combat pour indiquer le lieu de rencontre.
+			</p>
+			<img class="technique_image" src="./img/hote/hote_lien_ame.jpg"/>
+		</div>
+		
+		<div class="transition_phase" id="hote_royaume_esprit">
+			<p>
+				Dans le Royaume des Esprits :
+			</p>
+		</div>
+		
+		<div class="technique" id="hote_ames_gemissantes">
+			<div class="technique_detail">
+			Deuxième technique : <span class="technique_detail_nom">Âmes gémissantes. </span>(Royaume des esprits.)
+			</div>
+			<p>Pendant 1 minute, la Reine des Âmes va caster un sort infligeant des dégâts à tous les personnages présents dans le Royaume des Esprits.
+			<br/>Si tous les adds du Royaume des Esprits sont tués, les joueurs peuvent rejoindre le Royaume Corporel jusqu'à la fin de ce cast pour éviter les dégâts.
+			<br/>Le tank et un heal doivent rester dans le Royaume des Esprits.
+			</p>
+		</div>
+		
+		<div class="technique" id="hote_reliquat">
+			<div class="technique_detail">
+			Troisième technique : <span class="technique_detail_nom">Reliquat d'âme. </span>(Royaume des esprits.)
+			</div>
+			<p>Trois reliquats d'âmes vont être invoqués et doivent être tankés.
+			<br/>De la pourriture apparaît en AOE là où ils se déplacent, et à leur mort ils provoquent une explosion en AOE.
+			<br/><br/>
+			<span class="attention_nb">Les Reliquats d'âme doivent donc être contrôlés et tués le plus vite possible.</span>
+			</p>
+			<img class="technique_image" src="./img/hote/hote_reliquat.jpg"/>
+		</div>
+		
+		<div class="technique" id="hote_chaine_esprit">
+			<div class="technique_detail">
+			Quatrième technique : <span class="technique_detail_nom">Chaînes d'esprit. </span>(Royaume des esprits.)
+			</div>
+			<p>Deux Prêtresses vont également être invoquées et placeront un débuff "Chaîne d'esprit" sur des joueurs aléatoires (dans le Royaume des esprits), qui inflige des dégâts et réduit la vitesse de déplacement de 50%.
+			<br/>Ce débuff peut être dispell et doit donc l'être rapidement.
+			</p>
+		</div>
+		
+		<div class="technique" id="hote_cri_fracassant">
+			<div class="technique_detail">
+			Cinquième technique : <span class="technique_detail_nom">Cri fracassant. </span>(Royaume des esprits.)
+			</div>
+			<p>Les Prêtresses lancent également une canalisation de Cri fracassant, qui inflige des dégâts à la cible pendant le cast, et provoque une explosion à l'emplacement du joueur si le cast va jusqu'au bout.
+			<br/>Ce sort peut être interrompu, et doit l'être aussi souvent que possible.
+			<br/><br/>Toutefois, des adds du Royaume Corporel vont gagner un buff <a href="#hote_armure_thoracique" class="technique_link">Armure Thoracique</a> qui réduit les dégâts subis de 95%.
+			<br/><br/>Ce buff peut être retiré en provoquant l'explosion de la fin du sort sur ces adds.
+			<br/><br/>Lorsque les adds gagnent ce débuff, le tank du Royaume Corporel doit donc demander aux joueurs visés par le sort de venir sur les adds.
+			<br/><br/>
+			<span class="attention_nb">La canalisation ne doit donc pas être interrompue quand les adds ont le buff !</span>
+			<br/><br/>
+			<span class="attention_nb">Attention à ne pas tuer les Prêtresses tant que les adds n'ont pas perdu le buff !</span>
+			</p>
+		</div>
+		
+		<div class="transition_phase" id="hote_royaume_esprit">
+			<p>
+				Dans le Royaume Corporel :
+			</p>
+		</div>
+		
+		<div class="technique" id="hote_effondrement_fissures">
+			<div class="technique_detail">
+			Sixième technique : <span class="technique_detail_nom">Effondrement de fissures. </span>(Royaume corporel.)
+			</div>
+			<p>Le moteur d'âme va régulièrement marquer une zone autour d'un joueur distant, infligeant des dégâts AOE pendant 1 min 30.
+			<br/>Les distants doivent donc être bien espacés les uns des autres et éloignés autant que possible pour ne pas faire apparaître d'AOE au milieu du raid.
+			</p>
+		</div>
+		
+		<div class="technique" id="hote_cri_tourmenté">
+			<div class="technique_detail">
+			Septième technique : <span class="technique_detail_nom">Cris tourmentés. </span>(Royaume corporel.)
+			</div>
+			<p>Le moteur d'âme va marquer un joueur et après 5 secondes va lancer une AOE en forme de cône en direction du joueur et de la longueur de toute la salle.
+			<br/>Cette zone va rester pendant 35 secondes et les joueurs qui restent dedans subissent des dégâts et sont silence.
+			<br/>Le joueur marqué doit donc bien positionner la zone pour qu'elle ne gêne pas le raid.
+			<br/>Aux casts suivants, les zones doivent être positionnées le plus proche possible les unes des autres pour éviter de prendre trop de place.
+			</p>
+		</div>
+		
+		<div class="technique" id="hote_armure_thoracique">
+			<div class="technique_detail">
+			Huitième technique : <span class="technique_detail_nom">Armure Thoracique. </span>(Royaume corporel.)
+			</div>
+			<p>Un Templier réanimé et deux Gardes squelettes ignobles vont être invoqués.
+			<br/>A 50% PV, ils gagnent le buff Armure Thoracique, qui réduit les dégâts subis de 95%.
+			<br/><br/>Le seul moyen de retirer ce buff est de provoquer l'explosion de la fin du sort <a href="#hote_cri_fracassant" class="technique_link">Cri fracassant</a> sur les adds.
+			<br/><br/>
+			<span class="attention_nb">Le tank doit donc dire quand ce buff apparait pour que les joueurs visés par le sort viennent sur les adds.</span>
+			</p>
+		</div>
+		
+		<div class="transition_phase" id="hote_transi_p1_p2">
+			<p>
+				A 30% PV, la Reine des âmes disparaît et le moteur des âmes se transforme en Hôte Désolé et vient au milieu de la salle.
+				<br/>
+				Tous les adds doivent être tués avant de passer en P2.
+				<br/>
+				Certaines techniques de la Reine des âmes sont toujours présentes.
+				<br/>
+				Les dégâts du boss vont augmenter au fur et à mesure, donc BloodLust et on envoie la sauce béarnaise (malgré les nombreux déplacements nécessaires).
+			</p>
+		</div>
+		
+		<div class="technique" id="hote_mort_fracturante">
+			<div class="technique_detail">
+			Première technique : <span class="technique_detail_nom">Mort Fracturante. </span>
+			</div>
+			<p>Inflige de gros dégâts aux joueurs du Royaume Corporel. Ceux-ci doivent venir au CàC du boss, sinon il va gagner un stack de dégâts.
+			<br/>Inflige des dégâts fatals aux joueurs du Royaume des esprits. Toutefois, les dégâts sont réduits avec la distance. Les joueurs du Royaume des esprits doivent donc s'éloigner au maximum.
+			</p>
+		</div>
+		
+		<div class="technique" id="hote_fracture_mortelle">
+			<div class="technique_detail">
+			Première technique : <span class="technique_detail_nom">Fracture mortelle. </span>
+			</div>
+			<p>Inflige de gros dégâts aux joueurs du Royaume des esprits. Ceux-ci doivent venir au CàC du boss, sinon il va gagner un stack de dégâts.
+			<br/>Inflige des dégâts fatals aux joueurs du Royaume Corporel. Toutefois, les dégâts sont réduits avec la distance. Les joueurs du Royaume Corporel doivent donc s'éloigner au maximum.
+			</p>
+		</div>
+		
+		<div class="fin_page"></div>
+    </body>
+</html>
