@@ -5,12 +5,13 @@
     <head>
         <!-- En-tête de la page -->
         <meta charset="iso-8859-1" />
-		<link rel="stylesheet" type="text/css" href="style_tombe.css" />
+		<link rel="stylesheet" type="text/css" href="/style_tombe.css" />
         <title>Stratégie Tombe de Sargeras : Harjatan</title>
     </head>
 
     <body>
-		<div w3-include-html="./liens_boss.html"></div> 
+		<div w3-include-html="/menu.html"></div>
+		<div w3-include-html="/liens_boss.html"></div> 
 
 		<script>
 			w3.includeHTML();
@@ -21,7 +22,7 @@
 		
 		<div class="boss_intro">
 			<h3>Troisième boss du raid, 1 phase qui se répète et fait plus de dégâts à chaque fois.</h3>
-			<span class="loot_tier20"><img src="./img/icon/loot.png" title="Drop une pièce de set"/> Drop les Gants T20</span>
+			<span class="loot_tier20"><img src="/img/icon/loot.png" title="Drop une pièce de set"/> Drop les Gants T20</span>
 		</div>
 		
 		<div class="generalites_combat">
@@ -32,7 +33,7 @@
 			<details>
 				<summary>Afficher le positionnement :</summary>
 				<fieldset>
-					<img class="generalites_img" src="./img/harjatan/harjatan_position.jpg"/>
+					<img class="generalites_img" src="/img/harjatan/harjatan_position.jpg"/>
 				</fieldset>
 			</details>
 		</div>
@@ -45,7 +46,7 @@
 			<br/>Les dégâts de cette technique sont répartis entre tous les joueurs touchés. Si moins de 5 joueurs sont touchés le boss gagne un buff de dégâts permanents.
 			<br/>Quand le boss arrive vers les 100 d'énergie, le tank doit donc tourner le boss vers le raid, qui se stack.
 			</p>
-			<img class="technique_image" src="./img/harjatan/harja_rage_non_contenue.jpg"/>
+			<img class="technique_image" src="/img/harjatan/harja_rage_non_contenue.jpg"/>
 		</div>
 		
 		<div class="technique" id="harja_gladiateur">
@@ -56,7 +57,7 @@
 			<br/>Lance un "fixate" sur un joueur au hasard, celui-ci doit s'éloigner du raid et "kite" le mob.
 			<br/>Quand le fixate est fini, le tank doit prendre l'add et le mettre dos au raid.
 			</p>
-			<img class="technique_image" src="./img/harjatan/harja_gladiateur.jpg"/>
+			<img class="technique_image" src="/img/harjatan/harja_gladiateur.jpg"/>
 		</div>
 		
 		<div class="technique" id="harja_soignevague">
@@ -70,9 +71,9 @@
 			<br/><br/>
 			<span class="attention_nb">Bien penser à définir où doivent être posées les flaques !</span>
 			</p>
-			<img class="technique_image" src="./img/harjatan/harja_soignevague.jpg"/>
+			<img class="technique_image" src="/img/harjatan/harja_soignevague.jpg"/>
 			<br/>
-			<img class="technique_image" src="./img/harjatan/harja_explosion_aqueuse.jpg"/>
+			<img class="technique_image" src="/img/harjatan/harja_explosion_aqueuse.jpg"/>
 		</div>
 		
 		<div class="technique" id="harja_attraction">
@@ -86,23 +87,23 @@
 			<br/><br/>Une fois tous les coups améliorés donnés, il va lancer une grosse AOE de raid, des CoolDowns de heals et des CDs défensifs persos seront donc nécessaires.
 			<br/><br/><span class="attention_nb">Comme les AOEs de givre sont replacées, il y en aura logiquement le double à la prochaine phase, donc le double de dégâts. Garder les plus gros CDs de heal pour la deuxième fois (si le boss tombe en moins de 3 phases).</span>
 			</p>
-			<img class="technique_image" src="./img/harjatan/harja_attraction.jpg"/>
+			<img class="technique_image" src="/img/harjatan/harja_attraction.jpg"/>
 			<br/>
-			<img class="technique_image" src="./img/harjatan/harja_coups_algides.jpg"/>
+			<img class="technique_image" src="/img/harjatan/harja_coups_algides.jpg"/>
 		</div>
 		
 		<div class="technique" id="harja_armure_abrasive">
 			<div class="technique_detail">
-			Cinquième technique : <span class="technique_detail_nom">Armure abrasive. </span><img src="./img/icon/tank.png" title="Technique de tanking"/>
+			Cinquième technique : <span class="technique_detail_nom">Armure abrasive. </span><img src="/img/icon/tank.png" title="Technique de tanking"/>
 			</div>
 			<p>Place un DOT sur le tank qui dure 30 secondes. Les tanks doivent s'échanger l'aggro tous les 4-5 stacks.
 			</p>
-			<!--<img class="technique_image" src="./img/goroth/goroth_armure.jpg"/>-->
+			<!--<img class="technique_image" src="/img/goroth/goroth_armure.jpg"/>-->
 		</div>
 		
 		<div class="technique technique_heroic" id="goroth_eruption_gangrenee">
 			<div class="technique_detail">Mode Héroïque : <span class="technique_detail_nom"></span>
-			<img class="technique_heroic_only" src="./img/icon/heroic.png" title="Seulement en difficulté Héroïque"/>
+			<img class="technique_heroic_only" src="/img/icon/heroic.png" title="Seulement en difficulté Héroïque"/>
 			</div>
 			<p>A priori rien de plus en Héroïque, seulement plus de murlocs à chaque spawn.
 			</p>

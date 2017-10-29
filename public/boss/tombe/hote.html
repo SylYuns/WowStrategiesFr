@@ -5,12 +5,13 @@
     <head>
         <!-- En-tête de la page -->
         <meta charset="iso-8859-1" />
-		<link rel="stylesheet" type="text/css" href="style_tombe.css" />
+		<link rel="stylesheet" type="text/css" href="/style_tombe.css" />
         <title>Stratégie Tombe de Sargeras : Hôte Désolé</title>
     </head>
 
     <body>
-		<div w3-include-html="./liens_boss.html"></div> 
+		<div w3-include-html="/menu.html"></div>
+		<div w3-include-html="/liens_boss.html"></div> 
 
 		<script>
 			w3.includeHTML();
@@ -21,7 +22,7 @@
 		
 		<div class="boss_intro">
 			<h3>Sixième boss du raid, 2 phases, le raid est divisé en 2 "royaumes" (esprit/corporel).</h3>
-			<span class="loot_tier20"><img src="./img/icon/loot.png" title="Drop une pièce de set"/> Drop la Cape T20</span>
+			<span class="loot_tier20"><img src="/img/icon/loot.png" title="Drop une pièce de set"/> Drop la Cape T20</span>
 		</div>
 		
 		<div class="generalites_combat">
@@ -33,7 +34,7 @@
 			<!--<details>
 				<summary>Afficher le positionnement :</summary>
 				<fieldset>
-					<img class="generalites_img" src="./img/harjatan/harjatan_position.jpg"/>
+					<img class="generalites_img" src="/img/harjatan/harjatan_position.jpg"/>
 				</fieldset>
 			</details>-->
 		</div>
@@ -75,7 +76,7 @@
 			<br/>Les deux joueurs doivent se coller l'un à l'autre pour faire disparaître le débuff.
 			<br/>Un marqueur sera donc positionné avant le combat pour indiquer le lieu de rencontre.
 			</p>
-			<img class="technique_image" src="./img/hote/hote_lien_ame.jpg"/>
+			<img class="technique_image" src="/img/hote/hote_lien_ame.jpg"/>
 		</div>
 		
 		<div class="transition_phase" id="hote_royaume_esprit">
@@ -103,7 +104,7 @@
 			<br/><br/>
 			<span class="attention_nb">Les Reliquats d'âme doivent donc être contrôlés et tués le plus vite possible.</span>
 			</p>
-			<img class="technique_image" src="./img/hote/hote_reliquat.jpg"/>
+			<img class="technique_image" src="/img/hote/hote_reliquat.jpg"/>
 		</div>
 		
 		<div class="technique" id="hote_chaine_esprit">
@@ -206,18 +207,18 @@
 				<p>
 				Quand l'AOE autour du boss a des bords bien définis, c'est que vous devez aller au Cac pour aider à répartir les dégâts :
 				<br/>
-				<img class="technique_image" src="./img/hote/hote_cac.jpg"/>
+				<img class="technique_image" src="/img/hote/hote_cac.jpg"/>
 				<br/><br/>
 				Au contraire, lorsque l'AOE est en forme de tourbillon, vous devez vous éloigner le plus possible :
 				<p/>
-				<img class="technique_image" src="./img/hote/hote_loin.jpg"/>
+				<img class="technique_image" src="/img/hote/hote_loin.jpg"/>
 			</fieldset>
 		</details>
 		
 		<div class="technique technique_heroic" id="hote_heroic_fletrissement">
 			<div class="technique_detail">
 			Mode Héroïque : <span class="technique_detail_nom">Flétrissement. </span>
-			<img class="technique_heroic_only" src="./img/icon/heroic.png" title="Seulement en difficulté Héroïque"/>
+			<img class="technique_heroic_only" src="/img/icon/heroic.png" title="Seulement en difficulté Héroïque"/>
 			</div>
 			<p>En mode de difficulté héroïque, la Reine des âmes va placer le débuff Flétrissement sur des joueurs au hasard.
 			<br/>Ce débuff inflige des dégâts d'ombre et augmente de 100% les dégâts reçus d'<a href="#hote_ames_gemissantes" class="technique_link">Âmes gémissantes</a>.
@@ -229,7 +230,7 @@
 		<div class="technique" id="hote_heroic_lance">
 			<div class="technique_detail">
 			Mode Héroïque : <span class="technique_detail_nom">Lance d'angoisse. </span>
-			<img class="technique_heroic_only" src="./img/icon/heroic.png" title="Seulement en difficulté Héroïque"/>
+			<img class="technique_heroic_only" src="/img/icon/heroic.png" title="Seulement en difficulté Héroïque"/>
 			</div>
 			<p>En mode de difficulté héroïque, le moteur des âmes va placer le débuff Lance d'angoisse sur un joueur au hasard.
 			<br/>Au bout de 6 secondes, ce débuff va infliger des dégâts d'ombre en AOE et faire passer les joueurs touchés dans le Royaume des Esprits.

@@ -10,7 +10,9 @@
     </head>
 
     <body>
-		<div w3-include-html="./liens_boss.html"></div> 
+		<div w3-include-html="/menu.html"></div> 
+		<div w3-include-html="/liens_boss_antorus.html"></div> 
+		<div w3-include-html="/liens_boss_tombe.html"></div> 
 
 		<script>
 			w3.includeHTML();
@@ -18,6 +20,45 @@
 		<div>
 			<h1>On est forts et braves les Jean-Michel Péons !!</h1>
 		</div>
-		<img src="./img/icon/goodjob.jpg"/>
+		<div id="videos_peons">
+		
+			<h2>La dernière vidéo : </h2>
+			<div class="lecteur_video" id="video_kj">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/ag2Rq2vEmhA" frameborder="0" allowfullscreen></iframe>
+			</div>
+		
+			<details>
+				<summary>Les vidéos précédentes : </summary>
+				<fieldset>
+		
+					<div class="lecteur_video" id="video_harja">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/IAOXrYsl4Sc" frameborder="0" allowfullscreen></iframe>
+					</div>
+				
+					<div class="lecteur_video" id="video_sasszine">				
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/OjPinOgNqhA" frameborder="0" allowfullscreen></iframe>
+					</div>
+					
+					<div class="lecteur_video" id="video_sisters">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/LCBYT6ZUlXU" frameborder="0" allowfullscreen></iframe>
+					</div>
+					
+					<div class="lecteur_video" id="video_hote">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/0PkeYO4cJxc" frameborder="0" allowfullscreen></iframe>
+					</div>
+					
+					<div class="lecteur_video" id="video_maiden">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/x3j6o4hGhOQ" frameborder="0" allowfullscreen></iframe>
+					</div>
+					
+					<div class="lecteur_video" id="video_avatar">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/1FvJ4B1qxAU" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</fieldset>
+			</details>
+		
+		</div>
+		
+		<div class="fin_page"></div>
 	</body>
 </html>
