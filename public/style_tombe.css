@@ -51,6 +51,10 @@ details {
 
 .technique_image {
 	margin-left: 50px;
+}
+
+.technique_image_wide {
+	margin-left: 50px;
 	width:100%;
     max-width:500px;
 }
