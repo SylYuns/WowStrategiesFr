@@ -51,6 +51,8 @@ details {
 
 .technique_image {
 	margin-left: 50px;
+	width:100%;
+    max-width:600px;
 }
 
 .technique_phase {
