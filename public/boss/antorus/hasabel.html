@@ -6,7 +6,7 @@
         <!-- En-tête de la page -->
         <meta charset="UTF-8" />
 		<link rel="stylesheet" type="text/css" href="/style_tombe.css" />
-        <title>Stratégie Antorus : Haut-commandement antoréen</title>
+        <title>Stratégie Antorus : Garde-portail Hasabel</title>
     </head>
 
     <body>
@@ -18,46 +18,46 @@
 		</script>
 	
         <!-- Corps de la page -->
-		<h1 id="command_title">Haut-commandement antoréen</h1>
+		<h1 id="command_title">Garde-portail Hasabel</h1>
 		
 		<div class="boss_intro">
-			<h3>Troisième boss du raid, 3 boss combattus tour à tour pendant que les 2 autres sont dans leurs cabines.</h3>
-			<span class="loot_tier20"><img src="/img/icon/loot.png" title="Drop une pièce de set"/> Drop la Cape T21</span>
+			<h3>Quatrième boss du raid, elle reste sur la plateforme principale, tous les 30% le raid doit aller tuer un add sur une autre plateforme.</h3>
+<!-- 			<span class="loot_tier20"><img src="/img/icon/loot.png" title="Drop une pièce de set"/> Drop la Cape T21</span> -->
 		</div>
 		
 		<div class="generalites_combat">
-			Le boss qui est au sol change toutes les 80 secondes.
-			<br/>Le boss au sol est d'abord Svirax puis Ishkar puis Erodus.
-			<br/>Un joueur doit aller dans le pod libre pour utiliser les techniques.
+			Un tank et un heal doivent toujours rester avec le boss.
+			<br/>Le maximum de joueurs du raid vont tuer l'add quand il pop.
+			<br/>Les dégâts sur le raid augmentent avec chaque portail ouvert, BL après le 3ème.
 			<details>
 				<summary>Afficher le positionnement :</summary>
 				<fieldset>
-					Position de chaque boss : 
-					<img class="generalites_img" src="/img/antorus/command/command_zone.jpg"/>
+					Le boss doit être placé à l'opposé du prochain portail à s'ouvrir :
+					<img class="generalites_img" src="/img/antorus/hasabel/hasabel_zone.jpg"/>
 				</fieldset>
 			</details>
 		</div>
 		
-		<div class="technique" id="command_faiblesse">
+		<div class="technique" id="hasabel_breche">
 			<div class="technique_detail">
-			Première technique : <span class="technique_detail_nom">Exploitation de faiblesse. </span><img src="/img/icon/tank.png" title="Technique de tanking"/>
+			Première technique : <span class="technique_detail_nom">Brèche dans la réalité. </span><img src="/img/icon/tank.png" title="Technique de tanking"/>
 			</div>
-			<p>Frappe en AOE (10m) sur le Tank et lui place un débuff qui augmente les dégâts physiques reçus de 75% pendant 20 sec. 
-			<br/>Faire un tank swap (voir à combien de stacks ?)
-			<br/>Cette technique est utilisée pendant tout le combat par le boss au sol.
+			<p>Place un DoT physique de 30 sec sur le tank qui peut se stack.
+			<br/>Les tank doivent swap à 2~3 stacks.
+			<br/>Quand un portail s'ouvre le tank qui est le plus low en stacks prend le boss et l'autre va dans le portail.
 			</p>
 			<!--<img class="technique_image" src="./img/goroth/goroth_armure.jpg"/>-->
 		</div>
 		
-		<div class="technique" id="command_grenade">
+		<div class="technique" id="hasabel_effondrement">
 			<div class="technique_detail">
-			Deuxième technique : <span class="technique_detail_nom">Grenade commotionnante. </span>
+			Deuxième technique : <span class="technique_detail_nom">Effondrement du monde. </span>
 			</div>
-			<p>Lance des grenades sur plusieurs joueurs, au bout de 5 secondes celles-ci explosent et infligent des gros dégâts AOE en plus de stun tous les joueurs touchés.
-			<br/>Les joueurs visés doivent immédiatement se dépack.
-			<br/>Cette technique est utilisée pendant tout le combat par le boss au sol.
+			<p>Crée un immense zone d'AOE qui explose au bout de 5 secondes.
+			<br/>Les joueurs doivent s'en éloigner à tout prix.
+			<br/>Le boss doit être placé au bon endroit pour que les joueurs puissent être proches du prochain portail après l'explosion (voir img résumé)
 			</p>
-			<!--<img class="technique_image" src="./img/harjatan/harja_rage_non_contenue.jpg"/>-->
+			<img class="technique_image" src="/img/antorus/hasabel/hasabel_effondrement.jpg"/>
 		</div>
 		
 		<div class="technique" id="command_chaos">
@@ -85,7 +85,7 @@
 			<p>Place des mines à l'emplacement de joueurs aléatoires.
 			<br/>Après 3 secondes les mines sont armées et explosent si un joueur passe à proximité.
 			</p>
-			<img class="technique_image" src="/img/antorus/command/command_mine.jpg"/>
+			<img class="technique_image" src="/img/antorus/command_mine.jpg"/>
 		</div>
 		
 		<div class="technique" id="command_summon">
@@ -140,7 +140,7 @@
 			<br/><br/>
 			<span class="attention_nb">Une zone doit être définie ou placer les boucliers et où les joueurs ne doivent pas aller en dehors des Fusillade pour qu'il n'y ait pas de mines à proximité des boucliers.</span>
 			</p>
-			<img class="technique_image" src="/img/antorus/command/command_bouclier.jpg"/>
+			<img class="technique_image" src="/img/antorus/command_bouclier.jpg"/>
 		</div>
 		
 		<div class="technique" id="command_pod_erodus">
@@ -150,7 +150,7 @@
 			<p>Lance une balise perturbatrice qui kick les ennemis et les slow, et qui détruit les mines au sol.
 			<br/>Le plus de mines possible doivent être désactivées, en particulier s'il y en a à proximité des émetteurs de bouclier.
 			</p>
-			<img class="technique_image" src="/img/antorus/command/command_balise.jpg"/>
+			<img class="technique_image" src="/img/antorus/command_balise.jpg"/>
 		</div>
 		
 		<div class="technique technique_heroic" id="command_heroic">
