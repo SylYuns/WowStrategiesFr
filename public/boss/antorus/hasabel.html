@@ -21,7 +21,7 @@
 		<h1 id="command_title">Garde-portail Hasabel</h1>
 		
 		<div class="boss_intro">
-			<h3>Quatrième boss du raid, elle reste sur la plateforme principale, tous les 30% le raid doit aller tuer un add sur une autre plateforme.</h3>
+			<h3>Quatrième boss du raid. Elle reste sur la plateforme principale, à 90%, 60% et 30% HP le raid doit aller tuer un add sur une autre plateforme.</h3>
 <!-- 			<span class="loot_tier20"><img src="/img/icon/loot.png" title="Drop une pièce de set"/> Drop la Cape T21</span> -->
 		</div>
 		
@@ -33,9 +33,16 @@
 				<summary>Afficher le positionnement :</summary>
 				<fieldset>
 					Le boss doit être placé à l'opposé du prochain portail à s'ouvrir :
+					<br/>
 					<img class="generalites_img" src="/img/antorus/hasabel/hasabel_zone.jpg"/>
 				</fieldset>
 			</details>
+		</div>
+		
+		<div class="transition_phase" id="command_technique_pod">
+			<p>
+				Les boss utilise quatre techniques tout au long du combat :
+			</p>
 		</div>
 		
 		<div class="technique" id="hasabel_breche">
@@ -60,104 +67,87 @@
 			<img class="technique_image" src="/img/antorus/hasabel/hasabel_effondrement.jpg"/>
 		</div>
 		
-		<div class="technique" id="command_chaos">
+		<div class="technique" id="hasabel_barrage">
 			<div class="technique_detail">
-			Troisième technique : <span class="technique_detail_nom">Impulsion chaotique. </span><img src="/img/icon/heal.png" title="Technique à dispell"/>
+			Troisième technique : <span class="technique_detail_nom">Barrage de gangrorage. </span>
 			</div>
-			<p>Vise plusieurs joueurs puis leur lance 3 missiles chacun, qui appliquent un débuff augmentant les dégâts reçus de 1% par missile.
-			<br/>Le débuff se stack mais peut être dispell.
-			<br/>Les Healers doivent donc dispell dès que la vague de missiles est finie.
-			<br/>Cette technique est utilisée pendant tout le combat par les boss dans les pods.
+			<p>Lance un bombardement dans une large ligne marquée au sol.
+			<br/>Les joueurs doivent s'écarter avant que le bombardement arrive.
 			</p>
-			<!--<img class="technique_image" src="./img/harjatan/harja_rage_non_contenue.jpg"/>-->
+			<img class="technique_image" src="/img/antorus/hasabel/hasabel_barrage.jpg"/>
 		</div>
 		
-		<div class="transition_phase" id="command_technique_pod">
+		<div class="technique" id="hasabel_transport">
+			<div class="technique_detail">
+			Quatrième technique : <span class="technique_detail_nom">Portail de transport. </span>
+			</div>
+			<p>Invoque différents types d'adds.
+			<br/>Les diablotins et les traqueurs lancent <b>un spell qui peut et doit être kick !</b>
+			<br/>Les araignées immobilisent un joueur, elles doivent donc être tuées rapidement pour ne pas empêcher d'éviter les AOE.
+			</p>
+<!-- 			<img class="technique_image" src="/img/antorus/hasabel/hasabel_barrage.jpg"/> -->
+		</div>
+		
+		<div class="transition_phase" id="hasabel_portals">
 			<p>
-				Les boss utilisent des techniques spécifiques quand ils sont dans leurs pods :
+				A 90%, 60% et 30% HP, Hasabel va invoquer un add sur une des autres plateformes.
+				<br/>Tant qu'un add est en vie les joueurs sur la plateforme principale prennent de très gros dégâts.
+				<br/>Chaque portail ouvert inflige des dégâts supplémentaires en continu sur le raid, les dégâts sont donc plus importants au fur et à mesure du combat.
+				<br/>Un maximum de joueurs doit aller tuer l'add pour qu'il tombe très vite.
 			</p>
 		</div>
 		
-		<div class="technique" id="command_mine">
+		<div class="technique" id="hasabel_xoroth">
 			<div class="technique_detail">
-			<span class="technique_detail_nom">Ishkar : Mine entropique. </span>
+			Plateforme Xoroth : <span class="technique_detail_nom">Vulcanar. </span>
 			</div>
-			<p>Place des mines à l'emplacement de joueurs aléatoires.
-			<br/>Après 3 secondes les mines sont armées et explosent si un joueur passe à proximité.
+			<p>Utilise 2 sorts qui peuvent être kick. Une rotation doit être mise en place.
+			<br/>Lance des AOEs sur les joueurs en continu, elles doivent être évitées.
 			</p>
-			<img class="technique_image" src="/img/antorus/command_mine.jpg"/>
+			<img class="technique_image_wide" src="/img/antorus/hasabel/hasabel_xoroth.jpg"/>
 		</div>
 		
-		<div class="technique" id="command_summon">
+		<div class="technique" id="hasabel_rancora">
 			<div class="technique_detail">
-			<span class="technique_detail_nom">Erodus : Invocation de renforts. </span>
+			Plateforme Rancora : <span class="technique_detail_nom">Dacidion. </span>
 			</div>
-			<p>Invoque des adds de deux types différents :
-			<br/>Pyromancienne fanatique : cast une <i>Explosion pyrotechnique</i> qui <b>doit être kick !</b>
-			<br/>Troupier de choc gangrelame : 
-			<br/><span style="margin-left:20px">1) charge l'ennemi le plus loin et le bump puis le slow</span>
-			<br/><span style="margin-left:20px">2) lance une Tempête de lames qui inflige des dégâts en AOE</span>
+			<p>Place un débuff sur les joueurs qui leur vole 50~60% de leurs HPs <b>actuels</b> en 5 secondes.
+			<br/>Les Healers doivent donc tenir tout le monde en vie mais ne pas remonter leurs HPs trop haut pour que l'add ne se heal pas trop.
+			<br/>Decidion va aussi cast un Portail Instable qui doit être kick.
+			<br/>Elle va également mettre un joueur dans un cocon qui doit être détruit pour libérer le joueur.
+			</p>
+			<img class="technique_image_wide" src="/img/antorus/hasabel/hasabel_cocon.jpg"/>
+		</div>
+		
+		<div class="technique" id="hasabel_nathreza">
+			<div class="technique_detail">
+			Plateforme Nathreza : <span class="technique_detail_nom">Lord Eilgar. </span>
+			</div>
+			<p>Place un débuff sur les Healers qui les empêche de faire du heal mais régen leur mana de 2% par seconde.
+			<br/>Ce débuff peut être dispell. Les Healers doivent donc voir combien de temps ils le gardent pour régen une partie de leur mana.
+			<br/>Lord Eilgar inflige aussi périodiquement de gros dégâts à tous les joueurs à 20m.
+			<br/>Il va aussi cast un Portail Instable qui doit être kick.
+			<br/>
 			</p>
 			<!--<img class="technique_image" src="./img/harjatan/harja_rage_non_contenue.jpg"/>-->
 		</div>
 		
-		<div class="technique" id="command_fusillade">
-			<div class="technique_detail">
-			<span class="technique_detail_nom">Svirax : Fusillade. </span>
-			</div>
-			<p>Svirax appelle un bombardement qui inflige 2 millions de dégâts à tout le raid.
-			<br/>Après chaque utilisation, la technique devient 25% plus puissante.
-			<br/>Les joueurs doivent être sous Gangrebouclier pour réduire les dégâts
-			<br/>Ces boucliers sont disponibles grâce au pod d'Ishkar <a href="#command_pod_ishkar" class="technique_link">(voir pod d'Ishkar)</a>
-			</p>
-			<!--<img class="technique_image" src="./img/harjatan/harja_rage_non_contenue.jpg"/>-->
-		</div>
-		
-		<div class="transition_phase" id="command_voler_pod">
+		<div class="transition_phase" id="hasabel_transi">
 			<p>
-				Le boss qui vient dans l'arène laisse son pod libre, un joueur doit donc y aller pour utiliser les techniques.
-				<br/>Tant qu'il y reste il reçoit un DoT qui fait de plus en plus mal, il devra donc sortir avant de mourir et un autre joueur peut prendre sa place.
+				Une fois tous les adds tués, le raid doit finir le boss.
+				<br/>Les dégâts reçus par le raid à ce moment-là sont très important, il faut donc le finir rapidement.
+				<br/>La BL est claquée à ce moment.
 			</p>
 		</div>
 		
-		<div class="technique" id="command_pod_svirax">
-			<div class="technique_detail">
-			<span class="technique_detail_nom">Pod de Svirax : Feu cinglant. </span>
-			</div>
-			<p>Lance un bombardement à l'emplacement ciblé.
-			<br/>Fonctionne uniquement sur les adds.
-			</p>
-			<!--<img class="technique_image" src="./img/harjatan/harja_rage_non_contenue.jpg"/>-->
-		</div>
-		
-		<div class="technique" id="command_pod_ishkar">
-			<div class="technique_detail">
-			<span class="technique_detail_nom">Pod d'Ishkar : Gangrebouclier. </span>
-			</div>
-			<p>Lance un émetteur de bouclier à l'emplacement ciblé.
-			<br/>Cet émetteur peut être activé pour générer un gangrebouclier qui réduit les dégâts de feu de 50% pendant 10 sec.
-			<br/>Le bouclier doit donc être activé juste avant la <a href="#command_fusillade" class="technique_link">Fusillade</a>.
-			<br/><br/>
-			<span class="attention_nb">Une zone doit être définie ou placer les boucliers et où les joueurs ne doivent pas aller en dehors des Fusillade pour qu'il n'y ait pas de mines à proximité des boucliers.</span>
-			</p>
-			<img class="technique_image" src="/img/antorus/command_bouclier.jpg"/>
-		</div>
-		
-		<div class="technique" id="command_pod_erodus">
-			<div class="technique_detail">
-			<span class="technique_detail_nom">Pod d'Erodus : Balise pertubatrice. </span>
-			</div>
-			<p>Lance une balise perturbatrice qui kick les ennemis et les slow, et qui détruit les mines au sol.
-			<br/>Le plus de mines possible doivent être désactivées, en particulier s'il y en a à proximité des émetteurs de bouclier.
-			</p>
-			<img class="technique_image" src="/img/antorus/command_balise.jpg"/>
-		</div>
-		
-		<div class="technique technique_heroic" id="command_heroic">
+		<div class="technique technique_heroic" id="hasabel_heroic">
 			<div class="technique_detail">Mode Héroïque : <span class="technique_detail_nom"></span>
 			<img class="technique_heroic_only" src="/img/icon/heroic.png" title="Seulement en difficulté Héroïque"/>
 			</div>
-			<p>A priori rien de plus en Héroïque.
+			<p>En Héroïque les joueurs doivent gérer les techniques spéciales de chaque plateforme en allant chercher un buff sur une autre plateforme.
+			<br/>Avant d'aller sur Vulcanar, un joueur doit aller chercher une Gelée caustique sur la plateforme Rancora et la ramener pour la faire exploser sur l'add.
+			<br/>Avant d'aller sur Dacidion, un joueur doit aller chercher une Ombre engluante sur la plateforme Nathreza et la ramener pour la faire exploser sur l'add.
+			<br/>Avant d'aller sur Nathreza, des joueurs doivent aller chercher des Flammes semperardentes sur la plateforme Xoroth et les ramener pour donner la vision au raid.
 			</p>
 		</div>
 		
