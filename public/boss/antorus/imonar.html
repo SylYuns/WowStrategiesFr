@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<script src="https://www.w3schools.com/lib/w3.js"></script>
+	
+    <head>
+        <!-- En-tête de la page -->
+        <meta charset="UTF-8" />
+		<link rel="stylesheet" type="text/css" href="/style_tombe.css" />
+        <title>Stratégie Antorus : Imonar</title>
+    </head>
+
+    <body>
+		<div w3-include-html="/menu.html"></div>
+		<div w3-include-html="/liens_boss_antorus.html"></div> 
+
+		<script>
+			w3.includeHTML();
+		</script>
+	
+        <!-- Corps de la page -->
+		<h1 id="imonar_title">Imonar le Chasseur d'âmes</h1>
+		
+		<div class="boss_intro">
+			<h3>Sixième boss du raid, à 66% et 33% HP change de plateforme en larguant des pièges sur le pont.</h3>
+			<span class="loot_tier20"><img src="./img/icon/loot.png" title="Drop une pièce de set"/> Drop les Jambes T21</span>
+		</div>
+		
+		<div class="generalites_combat">
+			A 66% le boss change de plateforme, il faut le rejoindre le plus vite possible en évitant les pièges.
+			<br/>A 33% il change à nouveau de plateforme et ses techniques deviennent <b>améliorées</b>
+			<br/>BL en P3.
+			<!--<details>
+				<summary>Afficher le positionnement :</summary>
+				<fieldset>
+					<img class="generalites_img" src="./img/harjatan/harjatan_position.jpg"/>
+				</fieldset>
+			</details>-->
+		</div>
+		
+		<div class="technique" id="imonar_javelot">
+			<div class="technique_detail">
+			Première technique : <span class="technique_detail_nom">Javelot. </span><img src="/img/icon/tank.png" title="Technique de tanking"/>
+			</div>
+			<p>Tout au long du fight place des débuffs stackables sur les tanks.
+			<br/>Ceux-ci doivent swap pour perdre les débuffs.
+			</p>
+			<!--<img class="technique_image_wide" src="/img/antorus/garothi/garothi_bombard.jpg"/>-->
+		</div>
+		
+		<div class="technique" id="imonar_sommeil">
+			<div class="technique_detail">
+			Deuxième technique : <span class="technique_detail_nom">Bombe de sommeil. </span>
+			</div>
+			<p>Place un débuff sur un joueur qui l'endort pendant 20 secondes.
+			<br/>Le débuff peut être dispell, mais cela endort tous les joueurs à 10m pendant 8 secondes.
+			<br/>Dès qu'un joueur est visé par le débuff tout le monde doit donc s'en écarter.
+			</p>
+			<img class="technique_image" src="/img/antorus/imonar/imonar_sommeil.jpg"/>
+		</div>
+		
+		<div class="technique" id="imonar_grenade">
+			<div class="technique_detail">
+			Troisième technique : <span class="technique_detail_nom">Grenade à impulsion. </span>
+			</div>
+			<p>Lance des grenades à l'emplacement de joueurs aléatoires.
+			<br/>Marcher sur une grenade au sol la fait exploser et bump les joueurs proches.
+			<br/><br/>
+			<span class="attention_nb">Amélioré : Colle directement la grenade sur un joueur, qui inflige des dégâts à tous les autres joueurs dans les 5m et les bump toutes les 2 sec. Dure 10 minutes.</span>
+			</p>
+			<img class="technique_image" src="/img/antorus/imonar/imonar_grenade.jpg"/>
+		</div>
+		
+		<div class="technique" id="imonar_explosion">
+			<div class="technique_detail">
+			Quatrième technique : <span class="technique_detail_nom">Explosions chargées. </span>
+			</div>
+			<p>Un vaisseau vise un joueur avec un rayon en plaçant un marqueur sur sa tête.
+			<br/>Après 7 secondes tire un rayon en ligne droite.
+			<br/>Les joueurs visés doivent se placer de manière à ce que le rayon ne touche personne d'autre.
+			</p>
+			<img class="technique_image" src="/img/antorus/imonar/imonar_explosion.jpg"/>
+		</div>
+		
+		<div class="technique" id="imonar_shrapnel">
+			<div class="technique_detail">
+			Cinquième technique : <span class="technique_detail_nom">Explosion de shrapnel. </span>
+			</div>
+			<p>Lance des mines sur la palteforme. Inflige des dégâts à tout le raid.
+			<br/>Marcher sur une mine la fait exploser et inflige un DoT de 30 sec.
+			<br/><br/>
+			<span class="attention_nb">Amélioré : Bombarde la zone avec des AOEs. Être touché par cette technique applique un DoT de feu toutes les 2 sec <b>jusqu'à la mort !</b></span>
+			</p>
+			<img class="technique_image" src="/img/antorus/imonar/imonar_shrapnel.jpg"/>
+		</div>
+		
+		<div class="transition_phase" id="imonar_transi">
+			<p>
+				A 66% et 33% le boss traverse le pont pour changer de plateforme.
+				<br/>Le raid doit traverser le plus vite possible en évitant les pièges.
+				<br/>Une fois tout le raid sur la bonne plateforme, interrompre le boss.
+			</p>
+		</div>
+		
+		<div class="technique technique_heroic" id="garothi_heroic">
+			<div class="technique_detail">Mode Héroïque : <span class="technique_detail_nom"></span>
+			<img class="technique_heroic_only" src="/img/icon/heroic.png" title="Seulement en difficulté Héroïque"/>
+			</div>
+			<p>A priori rien de plus en Héroïque.
+			</p>
+		</div>
+		
+		<div class="fin_page"></div>
+    </body>
+</html>
