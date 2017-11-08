@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<script src="https://www.w3schools.com/lib/w3.js"></script>
+	
+    <head>
+        <!-- En-tête de la page -->
+        <meta charset="UTF-8" />
+		<link rel="stylesheet" type="text/css" href="/style_tombe.css" />
+        <title>Stratégie Antorus : Sabbat des Shivarra</title>
+    </head>
+
+    <body>
+		<div w3-include-html="/menu.html"></div>
+		<div w3-include-html="/liens_boss_antorus.html"></div> 
+
+		<script>
+			w3.includeHTML();
+		</script>
+	
+        <!-- Corps de la page -->
+		<h1 id="vari_title">Sabbat des Shivarra</h1>
+		
+		<div class="boss_intro">
+			<h3>Neuvième boss du raid, les boss se battent 2 par 2 et échangent après 2 techniques de Titans.</h3>
+			<!--<span class="loot_tier20"><img src="/img/icon/loot.png" title="Drop une pièce de set"/> Drop les Jambes T21</span>-->
+		</div>
+		
+		<div class="generalites_combat">
+			Les boss sont attaquables 2 par 2 et doivent être écartés l'un de l'autre (buff 99% rési sinon). 
+			<br/>Chaque boss utilise des techniques spécifiques.
+			<br/>Les boss font appel aux âmes des Titans pour lancer des techniques spéciales.
+			<br/>Après 2 techniques de Titans les boss changent.
+			<!--<details>
+				<summary>Afficher le positionnement :</summary>
+				<fieldset>
+					<img class="generalites_img" src="./img/harjatan/harjatan_position.jpg"/>
+				</fieldset>
+			</details>-->
+		</div>
+		
+		<div class="technique" id="shiv_tank">
+			<div class="technique_detail">
+			Tanks : <span class="technique_detail_nom">Frappe flamboyante & Gel éclair. </span><img src="/img/icon/tank.png" title="Technique de tanking"/>
+			</div>
+			<p>Frappe flamboyante (Noura) attaque en cône devant le boss et augmente les dégâts de cette technique sur la cible de 50%.
+			<br/>Gel éclair (Diima) inflige d'énorme dégâts à la cible et la ralenti de 10% pendant 20 secondes. 
+			<br/>Ces deux techniques se stackent, les tanks devront donc swap.
+			</p>
+			<!--<img class="technique_image_wide" src="/img/antorus/garothi/garothi_bombard.jpg"/>-->
+		</div>
+		
+		<div class="technique" id="shiv_noura">
+			<div class="technique_detail">
+			Premier boss : <span class="technique_detail_nom">Noura, mère des Flammes.</span>
+			</div>
+			<p>Sabre tournoyant : lance une épée enflammée sur un joueur aléatoire puis la fait revenir doucement vers elle. 
+			<br/><span style="margin-left:20px">L'épée inflige des dégâts à l'aterrissage et sur son passage.
+			<br/>Impulsion fulminante : place un débuff sur un joueur qui lui inflige des dégâts pendant 10 sec.
+			<br/><span style="margin-left:20px">A la fin des 10 sec il inflige des dégâts à tous les joueurs dans les 8 mètres. 
+			</p>
+			<!--<img class="technique_image_wide" src="/img/antorus/garothi/garothi_bombard.jpg"/>-->
+		</div>
+		
+		<div class="technique" id="shiv_asara">
+			<div class="technique_detail">
+			Deuxième boss : <span class="technique_detail_nom">Asara, mère de la Nuit . </span>
+			</div>
+			<p>Lames de l'ombre : Invoque 3 lames puis les envoies en ligne droite. 
+			<br/><span style="margin-left:20px">Les joueurs sur la trajectoire subissent des dégâts et sont repoussés.
+			<br/>Tempête de ténèbres : inflige 1 000 000 de dégâts par seconde à tout le raid pendant 15 secondes.
+			</p>
+			<!--<img class="technique_image_wide" src="/img/antorus/garothi/garothi_bombard.jpg"/>-->
+		</div>
+		
+		<div class="technique" id="shiv_diima">
+			<div class="technique_detail">
+			Deuxième boss : <span class="technique_detail_nom">Diima, mère de l'Obscurité. </span>
+			</div>
+			<p>Sang gelé : place un shield d'absorb heal sur des joueurs au hasard.
+			<br/><span style="margin-left:20px">Après quelques secondes les joueurs sont stun pendant une durée dépendante du shield restant.
+			<br/>Orbe de givre : invoque une orbe qui inflige d'énormes dégâts à tout le raid et le slow pendant 20 secondes.
+			<br/><span style="margin-left:20px">L'effet de slow est diminué si les joueurs sont éloignés de l'orbe.
+			</p>
+			<!--<img class="technique_image_wide" src="/img/antorus/garothi/garothi_bombard.jpg"/>-->
+		</div>
+		
+		<div class="technique" id="shiv_thu">
+			<div class="technique_detail">
+			Deuxième boss : <span class="technique_detail_nom">Thu'raya, mère du Cosmos . </span>
+			</div>
+			<p>Toucher du cosmos : cast interruptible qui inflige de gros dégâts à des joueurs aléatoires. Doit être kick.
+			<br/>Regard cosmique : Lie deux joueurs avec un rayon de Fel.
+			<br/><span style="margin-left:20px">Les joueurs sur la trajectoire du rayon subissent d'énormes dégâts (2.5 ~ 4M).
+			</p>
+			<!--<img class="technique_image_wide" src="/img/antorus/garothi/garothi_bombard.jpg"/>-->
+		</div>
+		
+				
+		
+		
+		<div class="technique technique_heroic" id="vari_heroic_etreinte">
+			<div class="technique_detail">Mode Héroïque : <span class="technique_detail_nom">Etreinte nécrotique</span>
+			<img class="technique_heroic_only" src="/img/icon/heroic.png" title="Seulement en difficulté Héroïque"/>
+			</div>
+			<p>Place un débuff sur un joueur qui inflige des dégâts après 6 secondes, et se transmet ensuite à tous les joueurs à moins de 10 mètres.
+			<br/>Le joueur devra donc s'écarter.
+			<br/>A voir comment gérer cette technique pour ne pas déclencher <i>Seul dans les ténèbres</i>
+			</p>
+		</div>
+		
+		<div class="technique technique_heroic" id="vari_heroic_etreinte">
+			<div class="technique_detail">Mode Héroïque : <span class="technique_detail_nom">Tourments</span>
+			<img class="technique_heroic_only" src="/img/icon/heroic.png" title="Seulement en difficulté Héroïque"/>
+			</div>
+			<p>En mode Héroïque, les Shivarra utilisent deux versions supplémentaires de tourment (<a href="#vari_tourment" class="technique_link">voir Tourments</a>).
+			</p>
+		</div>
+		
+		<div class="fin_page"></div>
+    </body>
+</html>
