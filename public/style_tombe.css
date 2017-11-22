@@ -232,7 +232,7 @@ a[aria-expanded="true"]::before {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 0px !important;
-    background: #626467;
+    background: #868e96;
 }
 
 #sidebar ul ul a:hover {
