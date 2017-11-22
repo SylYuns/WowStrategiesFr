@@ -1,16 +1,9 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 
 /* h1 { */
 /* 	color: red; */
 /* 	margin-bottom: 10px; */
 /* } */
-
-.navbar-dark h1 {
-	color: gold;
-}
-
-.navbar {
-	max-height: 50px;
-}
 
 details {
 	font-style: italic;
@@ -110,7 +103,7 @@ details {
     DEMO STYLE
     -------------------------------------------------------------------------
 */ 
-@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
 
 
 body {
@@ -133,11 +126,17 @@ a, a:hover, a:focus {
 }
 
 .navbar {
-    padding: 15px 10px;
+    max-height: 50px;
+	padding-top: 0;
+	margin-top: 0;
     background: #fff;
     border: none;
     border-radius: 0;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-dark h1 {
+	color: gold;
 }
 
 .navbar-btn {
@@ -164,7 +163,7 @@ a, a:hover, a:focus {
 #sidebar {
     min-width: 250px;
     max-width: 250px;
-    background: #7386D5;
+    background: #343a40;
     color: #fff;
     transition: all 0.3s;
 }
@@ -175,7 +174,7 @@ a, a:hover, a:focus {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #6d7fcc;
+    background: #626467;
 }
 
 #sidebar ul.components {
@@ -192,15 +191,16 @@ a, a:hover, a:focus {
     padding: 10px;
     font-size: 1.1em;
     display: block;
+    color: #000;
 }
 #sidebar ul li a:hover {
-    color: #7386D5;
-    background: #fff;
+    color: #000;
+    background: #c5424e;
 }
 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
     color: #fff;
-    background: #6d7fcc;
+    background: #dc3545;
 }
 
 
@@ -224,7 +224,11 @@ a[aria-expanded="true"]::before {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #6d7fcc;
+    background: #626467;
+}
+
+#sidebar ul ul a:hover {
+/*     background: #ffc107; */
 }
 
 ul.CTAs {
