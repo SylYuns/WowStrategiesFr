@@ -161,15 +161,15 @@ a, a:hover, a:focus {
 }
 
 #sidebar {
-    min-width: 280px;
-    max-width: 280px;
+    min-width: 310px;
+    max-width: 310px;
     background: #343a40;
     color: #fff;
     transition: all 0.3s;
 }
 
 #sidebar.active {
-    margin-left: -280px;
+    margin-left: -310px;
 }
 
 #sidebar .sidebar-header {
@@ -231,7 +231,7 @@ a[aria-expanded="true"]::before {
 
 ul ul a {
     font-size: 0.9em !important;
-    padding-left: 30px !important;
+    padding-left: 0px !important;
     background: #626467;
 }
 
