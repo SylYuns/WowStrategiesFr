@@ -163,7 +163,7 @@ a, a:hover, a:focus {
 #sidebar {
     min-width: 310px;
     max-width: 310px;
-    background: #5b6269;
+    background: #77808a;
     color: black;
     transition: all 0.3s;
 }
@@ -232,7 +232,7 @@ a[aria-expanded="true"]::before {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 0px !important;
-    background: #868e96;
+    background: #b1b5b9;
 }
 
 #sidebar ul ul a:hover {
