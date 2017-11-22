@@ -193,6 +193,14 @@ a, a:hover, a:focus {
     display: block;
     color: #000;
 }
+
+#sidebar ul li a.lien_boss {
+    padding: 0px;
+    font-size: 1.1em;
+    display: block;
+    color: #000;
+}
+
 #sidebar ul li a:hover {
     color: #000;
     background: #c5424e;
@@ -277,4 +285,12 @@ a.article, a.article:hover {
     #sidebarCollapse span {
         display: none;
     }
+}
+
+/* ---------------------------------------------------
+    PERSONNALISATION DU MENU
+----------------------------------------------------- */
+
+.lien_boss ul li a {
+	padding: 0px;	
 }
