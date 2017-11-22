@@ -9,7 +9,6 @@ $(document).ready(function () {
     });
     
     $("ul.boss_list li a").click(function(e){ 
-    	alert("Interception");
         e.preventDefault();
         var url = $(this).attr('href'); //get the link you want to load data from
         $.ajax({ 
