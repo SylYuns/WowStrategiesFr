@@ -24,7 +24,7 @@ Position de chaque boss :
 
 {{% ability
   id="command_faiblesse"
-  title="Première technique : "
+  title="Première technique"
   name="Exploitation de faiblesse."
   role="tank"
 %}}
@@ -35,7 +35,7 @@ Cette technique est utilisée pendant tout le combat par le boss au sol.
 
 {{% ability
   id="command_grenade"
-  title="Deuxième technique : "
+  title="Deuxième technique"
   name="Grenade commotionnante."
 %}}
 Lance des grenades sur plusieurs joueurs, au bout de 5 secondes celles-ci explosent et infligent des gros dégâts AOE en plus de stun tous les joueurs touchés.
@@ -45,7 +45,7 @@ Cette technique est utilisée pendant tout le combat par le boss au sol.
 
 {{% ability
   id="command_chaos"
-  title="Troisième technique : "
+  title="Troisième technique"
   name="Impulsion chaotique."
   role="heal"
 %}}
@@ -131,7 +131,7 @@ Le plus de mines possible doivent être désactivées, en particulier s'il y en 
 
 {{% ability
   id="command_hm"
-  title="Mode Héroïque :"
+  title="Mode Héroïque"
   mode="hm"
 %}}
 A priori rien de plus en Héroïque.

@@ -12,9 +12,9 @@ menu:
 ---
 
 {{% summary %}}
-	A 66% le boss change de plateforme, il faut le rejoindre le plus vite possible en évitant les pièges.
-	A 33% il change à nouveau de plateforme et ses techniques deviennent **améliorées**
-	BL en P3.
+A 66% le boss change de plateforme, il faut le rejoindre le plus vite possible en évitant les pièges.
+A 33% il change à nouveau de plateforme et ses techniques deviennent **améliorées**
+BL en P3.
 {{% /summary %}}
 
 {{% ability
@@ -23,10 +23,9 @@ menu:
   name="Javelot."
   role="tank"
 %}}
-  	Tout au long du fight place des débuffs stackables sur les tanks.
-	Ceux-ci doivent swap pour perdre les débuffs.
-	En P3 les stacks durent à l'infini.
-
+Tout au long du fight place des débuffs stackables sur les tanks.
+Ceux-ci doivent swap pour perdre les débuffs.
+En P3 les stacks durent à l'infini.
 {{% /ability %}}
 
 {{% ability
@@ -35,10 +34,11 @@ menu:
   name="Bombe de sommeil."
   phase="P1, P3"
 %}}
-	Place un débuff sur un joueur qui l'endort pendant 20 secondes.
-	Le débuff peut être dispell, mais cela endort tous les joueurs à 10m pendant 8 secondes.
-	Dès qu'un joueur est visé par le débuff tout le monde doit donc s'en écarter.
-	![Sommeil](/img/antorus/imonar/imonar_sommeil.jpg)
+Place un débuff sur un joueur qui l'endort pendant 20 secondes.
+Le débuff peut être dispell, mais cela endort tous les joueurs à 10m pendant 8 secondes.
+Dès qu'un joueur est visé par le débuff tout le monde doit donc s'en écarter.
+
+![Sommeil](/img/antorus/imonar/imonar_sommeil.jpg)
 {{% /ability %}}
 
 {{% ability
@@ -47,13 +47,14 @@ menu:
   name="Grenade à impulsion."
   phase="P1, P3"
 %}}
-	Lance des grenades à l'emplacement de joueurs aléatoires.
-	Marcher sur une grenade au sol la fait exploser et bump les joueurs proches.
-	{{% attention %}}
-	  Amélioré : Colle directement la grenade sur un joueur, qui inflige des dégâts à tous les autres joueurs dans les 5m et les bump toutes les 2 sec. Dure 10 minutes.
-  {{% /attention %}}
+Lance des grenades à l'emplacement de joueurs aléatoires.
+Marcher sur une grenade au sol la fait exploser et bump les joueurs proches.
 
-  ![Grenade](/img/antorus/imonar/imonar_grenade.jpg)
+{{% attention %}}
+Amélioré : Colle directement la grenade sur un joueur, qui inflige des dégâts à tous les autres joueurs dans les 5m et les bump toutes les 2 sec. Dure 10 minutes.
+{{% /attention %}}
+
+![Grenade](/img/antorus/imonar/imonar_grenade.jpg)
 {{% /ability %}}
 
 {{% ability
@@ -62,11 +63,11 @@ menu:
   name="Explosions chargées."
   phase="P2"
 %}}
-	Un vaisseau vise un joueur avec un rayon en plaçant un marqueur sur sa tête.
-	Après 7 secondes tire un rayon en ligne droite.
-	Les joueurs visés doivent se placer de manière à ce que le rayon ne touche personne d'autre.
+Un vaisseau vise un joueur avec un rayon en plaçant un marqueur sur sa tête.
+Après 7 secondes tire un rayon en ligne droite.
+Les joueurs visés doivent se placer de manière à ce que le rayon ne touche personne d'autre.
 
-  ![Explosion](/img/antorus/imonar/imonar_explosion.jpg)
+![Explosion](/img/antorus/imonar/imonar_explosion.jpg)
 {{% /ability %}}
 
 {{% ability
@@ -75,19 +76,20 @@ menu:
   name="Explosion de shrapnel."
   phase="P2, P3"
 %}}
-	Lance des mines sur la palteforme. Inflige des dégâts à tout le raid.
-	Marcher sur une mine la fait exploser et inflige un DoT de 30 sec.
-	{{% attention %}}
-	  Amélioré : Bombarde la zone avec des AOEs. Être touché par cette technique applique un DoT de feu toutes les 2 sec **jusqu'à la mort !**
-  {{% /attention %}}
+Lance des mines sur la palteforme. Inflige des dégâts à tout le raid.
+Marcher sur une mine la fait exploser et inflige un DoT de 30 sec.
 
-  ![Explosion](/img/antorus/imonar/imonar_shrapnel.jpg)
+{{% attention %}}
+Amélioré : Bombarde la zone avec des AOEs. Être touché par cette technique applique un DoT de feu toutes les 2 sec **jusqu'à la mort !**
+{{% /attention %}}
+
+![Explosion](/img/antorus/imonar/imonar_shrapnel.jpg)
 {{% /ability %}}
 
 {{% transition id="imonar_transi" %}}
-	A 66% et 33% le boss traverse le pont pour changer de plateforme.
-	Le raid doit traverser le plus vite possible en évitant les pièges.
-	Une fois tout le raid sur la bonne plateforme, interrompre le boss.
+A 66% et 33% le boss traverse le pont pour changer de plateforme.
+Le raid doit traverser le plus vite possible en évitant les pièges.
+Une fois tout le raid sur la bonne plateforme, interrompre le boss.
 {{% /transition %}}
 
 
@@ -96,5 +98,5 @@ menu:
   title="Mode Héroïque :"
   mode="hm"
 %}}
-	A priori rien de plus en Héroïque.
+A priori rien de plus en Héroïque.
 {{% /ability %}}

@@ -21,7 +21,7 @@ Les adds ont 3 points de spawn possibles (prédéfinis).
 {{% transition id="eonar_transi" %}}
 Zone immense avec plusieurs étages et 3 points de spawn des adds.
 
-{{% accordion title="Afficher la zone :" %}}
+{{% accordion title="Afficher la zone : " %}}
 ![Zone](/img/antorus/eonar/eonar_zone.jpg)
 
 En rouge la zone "middle" avec le spawn des adds en 1.
@@ -34,7 +34,7 @@ Un spell spécial permet de sauter super haut et de voler.
 Des "trampolines" sont placés à différents endroits pour passer d'un niveau à l'autre.
 RIP Klaab.
 
-{{% accordion title="Détail des premiers spawns :" %}}
+{{% accordion title="Détail des premiers spawns : " %}}
 * Middle portal (destructor)
 * Lower portal (destructor)
 * Upper portal (obfuscater + destructor)
@@ -45,7 +45,7 @@ RIP Klaab.
 
 {{% ability
   id="eonar_tanking"
-  title="Deux adds à tanker :"
+  title="Deux adds à tanker"
   name="Destructeur et Purificateur"
   role="tank"
 %}}
@@ -60,7 +60,7 @@ RIP Klaab.
 
 {{% ability
   id="eonar_adds"
-  title="Les autres adds :"
+  title="Les autres adds"
 %}}
   Négateur gangrechargé : rend les adds autour de lui inciblables. Est immunisé aux contrôles.
   Il doit être tué très rapidement. Les contrôles de zone affectent quand même les adds inciblables.
@@ -73,7 +73,7 @@ RIP Klaab.
 
 {{% ability
   id="eonar_lance"
-  title="Technique du Paraxis :"
+  title="Technique du Paraxis"
   name="Lance de la calamité."
 %}}
   Vise un joueur avec un rayon qui laisse une AOE de Fel là où il passe.
@@ -84,7 +84,7 @@ RIP Klaab.
 
 {{% ability
   id="eonar_pluie"
-  title="Technique du Paraxis :"
+  title="Technique du Paraxis"
   name="Pluie de corruption."
 %}}
   Place une marque sur plusieurs joueurs et provoque une explosion en AOE autour d'eux après quelques secondes.
@@ -95,7 +95,7 @@ RIP Klaab.
 
 {{% ability
   id="eonar_hm"
-  title="Mode Héroïque :"
+  title="Mode Héroïque"
   mode="hm"
 %}}
   En Héroïque le Paraxis aura peut-être de nouvelles techniques et il faudra peut-être que certains joueurs prennent un portail pour aller sur le vaisseau et arrêter un cast.
