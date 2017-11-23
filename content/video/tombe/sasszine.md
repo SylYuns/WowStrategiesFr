@@ -4,7 +4,7 @@ title: Péon Greyjoy vs Maîtresse Sass'Zine
 date: 2017-11-22T16:00:00+02:00
 menu:
   sidebar:
-    identifier: sasszine
+    identifier: video_sasszine
     parent: videos
     weight: 60
 ---

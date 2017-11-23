@@ -13,10 +13,16 @@
             		<a class="lien_boss" href="{{ .URL | relURL }}">
                   {{ $imageUrl := (delimit (slice "/img/icon/" $element.Identifier "/" .Identifier ".png") "") }}
                   {{ $imagePath := (delimit (slice "static" $imageUrl) "") }}
+                  <!-- idem with jpg -->
+                  {{ $imageUrlAlt := (delimit (slice "/img/icon/" $element.Identifier "/" .Identifier ".jpg") "") }}
+                  {{ $imagePathAlt := (delimit (slice "static" $imageUrlAlt) "") }}
+
                   {{ if fileExists $imagePath }}
               		  <img class="menu_boss_icon" src="{{ $imageUrl }}" alt="{{ .Name }}"/>
+                  {{ else if fileExists $imagePathAlt }}
+              		  <img class="menu_boss_icon" src="{{ $imageUrlAlt }}" alt="{{ .Name }}"/>
                   {{ end }}
-                  
+
               		{{ .Name }}
                 </a>
           	</li>

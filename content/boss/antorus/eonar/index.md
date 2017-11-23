@@ -12,35 +12,35 @@ menu:
 ---
 
 {{% summary %}}
-  Tuer des adds donne de l'énergie à Eonar, à 100 d'énergie elle attaque le Paraxis (doit être fait 3 fois).
-  Deux types d'adds doivent être tankés, les autres vont juste tout droit jusqu'à Eonar et doivent être tués avant.
-  La plupart des adds sont sensibles à tous les contrôles, il faut donc en utiliser un maximum (en rotation).
-  Les adds ont 3 points de spawn possibles (prédéfinis).
+Tuer des adds donne de l'énergie à Eonar, à 100 d'énergie elle attaque le Paraxis (doit être fait 3 fois).
+Deux types d'adds doivent être tankés, les autres vont juste tout droit jusqu'à Eonar et doivent être tués avant.
+La plupart des adds sont sensibles à tous les contrôles, il faut donc en utiliser un maximum (en rotation).
+Les adds ont 3 points de spawn possibles (prédéfinis).
 {{% /summary %}}
 
 {{% transition id="eonar_transi" %}}
-  Zone immense avec plusieurs étages et 3 points de spawn des adds.
+Zone immense avec plusieurs étages et 3 points de spawn des adds.
 
-  {{% accordion title="Afficher la zone :" %}}
-    ![Zone](/img/antorus/eonar/eonar_zone.jpg)
+{{% accordion title="Afficher la zone :" %}}
+![Zone](/img/antorus/eonar/eonar_zone.jpg)
 
-    En rouge la zone "middle" avec le spawn des adds en 1.
-    En rose la zone "lower" avec le spawn des adds en 2.
-    En jaune la zone "upper" avec le spawn des adds en 3.
-    En vert la zone où il est facile de dps les Kéraptéron (chauves-souris)
-  {{% /accordion %}}
+En rouge la zone "middle" avec le spawn des adds en 1.
+En rose la zone "lower" avec le spawn des adds en 2.
+En jaune la zone "upper" avec le spawn des adds en 3.
+En vert la zone où il est facile de dps les Kéraptéron (chauves-souris)
+{{% /accordion %}}
 
-  Un spell spécial permet de sauter super haut et de voler.
-  Des "trampolines" sont placés à différents endroits pour passer d'un niveau à l'autre.
-  RIP Klaab.
+Un spell spécial permet de sauter super haut et de voler.
+Des "trampolines" sont placés à différents endroits pour passer d'un niveau à l'autre.
+RIP Klaab.
 
-  {{% accordion title="Détail des premiers spawns :" %}}
-    * Middle portal (destructor)
-    * Lower portal (destructor)
-    * Upper portal (obfuscater + destructor)
-    * 2 : Lower (purifier) + Upper (obfuscater + purifier) + bats (intercept middle)
-    * 2 : Upper (felhounds) + Middle (obfuscator + destructor)
-  {{% /accordion %}}
+{{% accordion title="Détail des premiers spawns :" %}}
+* Middle portal (destructor)
+* Lower portal (destructor)
+* Upper portal (obfuscater + destructor)
+* 2 : Lower (purifier) + Upper (obfuscater + purifier) + bats (intercept middle)
+* 2 : Upper (felhounds) + Middle (obfuscator + destructor)
+{{% /accordion %}}
 {{% /transition %}}
 
 {{% ability

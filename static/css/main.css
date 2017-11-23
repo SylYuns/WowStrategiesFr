@@ -5,6 +5,12 @@
 /* 	margin-bottom: 10px; */
 /* } */
 
+/* fix br being inserted everywhere */
+ul > br,
+details > br {
+    display: none;
+}
+
 details {
 	font-style: italic;
 	margin-top: 10px;
@@ -102,7 +108,7 @@ details {
 /* -------------------------------------------------------------------------
     DEMO STYLE
     -------------------------------------------------------------------------
-*/ 
+*/
 
 
 
@@ -157,7 +163,7 @@ a, a:hover, a:focus {
 ----------------------------------------------------- */
 .wrapper {
     display: flex;
-    
+
 }
 
 #sidebar {
@@ -292,5 +298,5 @@ a.article, a.article:hover {
 ----------------------------------------------------- */
 
 .lien_boss ul li a {
-	padding: 0px;	
+	padding: 0px;
 }
