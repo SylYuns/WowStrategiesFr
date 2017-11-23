@@ -1,0 +1,21 @@
+{{ $id := .Get "id" }}
+{{ $title := .Get "title" }}
+{{ $name := .Get "name" }}
+{{ $mode := .Get "mode" }}
+{{ $role := .Get "role" }}
+
+<div class="technique {{ if eq $mode "hm" }}technique_heroic{{ end }}" id="{{ $id }}">
+  <div class="technique_detail">
+    {{ if eq $mode "hm" }}
+      <img class="technique_heroic_only" src="{{ .Site.BaseURL }}img/icon/heroic.png" title="Seulement en difficulté Héroïque"/>
+    {{ end }}
+    {{ $title }}
+    <span class="technique_detail_nom">{{ $name }}</span>
+    {{ if eq $role "heal" }}
+      <img src="{{ .Site.BaseURL }}img/icon/heal.png" title="Technique de heal"/>
+    {{ else if eq $role "tank" }}
+      <img src="{{ .Site.BaseURL }}img/icon/tank.png" title="Technique de tanking"/>
+    {{ end }}
+  </div>
+  {{ .Inner }}
+</div>

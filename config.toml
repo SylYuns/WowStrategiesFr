@@ -1,0 +1,7 @@
+baseURL = "http://peongreyjoy.netlify.com/"
+languageCode = "fr-fr"
+title = "Péon Greyjoy"
+relativeURLs = true
+
+[blackfriday]
+  extensions = ["hardLineBreak"]
