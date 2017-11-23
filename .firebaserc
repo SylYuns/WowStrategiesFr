@@ -1,9 +1,0 @@
-{
-  "projects": {
-    "default": "wowstategiesfr",
-    "wowstrat": "wowstategiesfr"
-  },
-  "hosting": {
-    "wowstrat": "wowstategiesfr"
-  }
-}

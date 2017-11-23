@@ -1,0 +1,8 @@
+{{ $title := .Get "title" }}
+
+<details>
+  <summary>{{ $title }}</summary>
+  <fieldset>
+    {{ .Inner }}
+  </fieldset>
+</details>
