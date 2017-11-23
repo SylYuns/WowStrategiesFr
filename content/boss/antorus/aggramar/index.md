@@ -122,11 +122,11 @@ Une fois les 2 *Flammes de Taeshalach* tués, Aggramar passe en P3.
 
 {{% ability
   id="aggramar_heroic"
-  title="Mode Héroïque :"
+  title="Mode Héroïque"
   mode="hm"
 %}}
 En HM, les *Embers de Taeshalach* ne disparaissent pas lorsqu'ils sont tués, mais se transforment en flaque de lave pendant 18 secondes puis réapparaissent avec 100% HPs.
 Le seul moyen de les faire disparaître est de les laisser arriver jusqu'à Aggramar.
 Le raid doit donc être coordonné pour les faire atteindre Aggramar un par un tout en pensant que le débuff+DoT de leur explosion dure 15 secondes.
-Ils doivent tous avoir exploser en moins de 3 minutes. 
+Ils doivent tous avoir explosé en moins de 3 minutes. 
 {{% /ability %}}
