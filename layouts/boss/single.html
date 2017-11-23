@@ -1,16 +1,18 @@
 {{ define "main" }}
   <h1 id="garothi_title">{{ .Title }}</h1>
 
-	<div class="boss_intro">
-		<h3>{{ .Params.intro }}</h3>
+  <div class="boss_intro">
+    {{ if .Params.intro }}
+      <h3>{{ .Params.intro }}</h3>
+    {{ end }}
 
     {{ if .Params.loots }}
-  		<div class="loot_tier20">
+      <div class="loot_tier20">
         <img src="{{ .Site.BaseURL }}img/icon/loot.png" title="Drop une pièce de set"/>
         {{ .Params.loots }}
       </div>
     {{ end }}
-	</div>
+  </div>
 
   {{ .Content }}
 {{ end }}

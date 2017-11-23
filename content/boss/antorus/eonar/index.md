@@ -90,7 +90,7 @@ menu:
   Place une marque sur plusieurs joueurs et provoque une explosion en AOE autour d'eux après quelques secondes.
   Les joueurs visés doivent s'écarter des autres (par exemple aller sur les bords et les autres se rapprochent du centre)
 
-  ![Lance](/img/antorus/eonar/eonar_pluie.jpg)
+  ![Pluie](/img/antorus/eonar/eonar_pluie.jpg)
 {{% /ability %}}
 
 {{% ability
