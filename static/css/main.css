@@ -5,12 +5,6 @@
 /* 	margin-bottom: 10px; */
 /* } */
 
-/* fix br being inserted everywhere */
-ul > br,
-details > br {
-    display: none;
-}
-
 details {
 	font-style: italic;
 	margin-top: 10px;
@@ -108,7 +102,7 @@ details {
 /* -------------------------------------------------------------------------
     DEMO STYLE
     -------------------------------------------------------------------------
-*/
+*/ 
 
 
 
@@ -122,7 +116,7 @@ p {
     font-size: 1.1em;
     font-weight: 300;
     line-height: 1.7em;
-    color: #999;
+    color: #5a5a5a;
 }
 
 a, a:hover, a:focus {
@@ -163,7 +157,7 @@ a, a:hover, a:focus {
 ----------------------------------------------------- */
 .wrapper {
     display: flex;
-
+    
 }
 
 #sidebar {
@@ -298,5 +292,5 @@ a.article, a.article:hover {
 ----------------------------------------------------- */
 
 .lien_boss ul li a {
-	padding: 0px;
+	padding: 0px;	
 }
