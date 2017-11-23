@@ -12,40 +12,40 @@ menu:
 ---
 
 {{% summary %}}
-  Tuer des adds donne de l'énergie à Eonar, à 100 d'énergie elle attaque le Paraxis (doit être fait 3 fois).
-  Deux types d'adds doivent être tankés, les autres vont juste tout droit jusqu'à Eonar et doivent être tués avant.
-  La plupart des adds sont sensibles à tous les contrôles, il faut donc en utiliser un maximum (en rotation).
-  Les adds ont 3 points de spawn possibles (prédéfinis).
+Tuer des adds donne de l'énergie à Eonar, à 100 d'énergie elle attaque le Paraxis (doit être fait 3 fois).
+Deux types d'adds doivent être tankés, les autres vont juste tout droit jusqu'à Eonar et doivent être tués avant.
+La plupart des adds sont sensibles à tous les contrôles, il faut donc en utiliser un maximum (en rotation).
+Les adds ont 3 points de spawn possibles (prédéfinis).
 {{% /summary %}}
 
 {{% transition id="eonar_transi" %}}
-  Zone immense avec plusieurs étages et 3 points de spawn des adds.
+Zone immense avec plusieurs étages et 3 points de spawn des adds.
 
-  {{% accordion title="Afficher la zone :" %}}
-    ![Zone](/img/antorus/eonar/eonar_zone.jpg)
+{{% accordion title="Afficher la zone : " %}}
+![Zone](/img/antorus/eonar/eonar_zone.jpg)
 
-    En rouge la zone "middle" avec le spawn des adds en 1.
-    En rose la zone "lower" avec le spawn des adds en 2.
-    En jaune la zone "upper" avec le spawn des adds en 3.
-    En vert la zone où il est facile de dps les Kéraptéron (chauves-souris)
-  {{% /accordion %}}
+En rouge la zone "middle" avec le spawn des adds en 1.
+En rose la zone "lower" avec le spawn des adds en 2.
+En jaune la zone "upper" avec le spawn des adds en 3.
+En vert la zone où il est facile de dps les Kéraptéron (chauves-souris)
+{{% /accordion %}}
 
-  Un spell spécial permet de sauter super haut et de voler.
-  Des "trampolines" sont placés à différents endroits pour passer d'un niveau à l'autre.
-  RIP Klaab.
+Un spell spécial permet de sauter super haut et de voler.
+Des "trampolines" sont placés à différents endroits pour passer d'un niveau à l'autre.
+RIP Klaab.
 
-  {{% accordion title="Détail des premiers spawns :" %}}
-    * Middle portal (destructor)
-    * Lower portal (destructor)
-    * Upper portal (obfuscater + destructor)
-    * 2 : Lower (purifier) + Upper (obfuscater + purifier) + bats (intercept middle)
-    * 2 : Upper (felhounds) + Middle (obfuscator + destructor)
-  {{% /accordion %}}
+{{% accordion title="Détail des premiers spawns : " %}}
+* Middle portal (destructor)
+* Lower portal (destructor)
+* Upper portal (obfuscater + destructor)
+* 2 : Lower (purifier) + Upper (obfuscater + purifier) + bats (intercept middle)
+* 2 : Upper (felhounds) + Middle (obfuscator + destructor)
+{{% /accordion %}}
 {{% /transition %}}
 
 {{% ability
   id="eonar_tanking"
-  title="Deux adds à tanker :"
+  title="Deux adds à tanker"
   name="Destructeur et Purificateur"
   role="tank"
 %}}
@@ -60,7 +60,7 @@ menu:
 
 {{% ability
   id="eonar_adds"
-  title="Les autres adds :"
+  title="Les autres adds"
 %}}
   Négateur gangrechargé : rend les adds autour de lui inciblables. Est immunisé aux contrôles.
   Il doit être tué très rapidement. Les contrôles de zone affectent quand même les adds inciblables.
@@ -73,7 +73,7 @@ menu:
 
 {{% ability
   id="eonar_lance"
-  title="Technique du Paraxis :"
+  title="Technique du Paraxis"
   name="Lance de la calamité."
 %}}
   Vise un joueur avec un rayon qui laisse une AOE de Fel là où il passe.
@@ -84,18 +84,18 @@ menu:
 
 {{% ability
   id="eonar_pluie"
-  title="Technique du Paraxis :"
+  title="Technique du Paraxis"
   name="Pluie de corruption."
 %}}
   Place une marque sur plusieurs joueurs et provoque une explosion en AOE autour d'eux après quelques secondes.
   Les joueurs visés doivent s'écarter des autres (par exemple aller sur les bords et les autres se rapprochent du centre)
 
-  ![Lance](/img/antorus/eonar/eonar_pluie.jpg)
+  ![Pluie](/img/antorus/eonar/eonar_pluie.jpg)
 {{% /ability %}}
 
 {{% ability
   id="eonar_hm"
-  title="Mode Héroïque :"
+  title="Mode Héroïque"
   mode="hm"
 %}}
   En Héroïque le Paraxis aura peut-être de nouvelles techniques et il faudra peut-être que certains joueurs prennent un portail pour aller sur le vaisseau et arrêter un cast.
