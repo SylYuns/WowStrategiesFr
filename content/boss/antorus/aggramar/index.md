@@ -68,6 +68,12 @@ Lance 5 techniques à la suite les unes des autres :
 * **Entaille de flamme** n°2 : le Tank1 taunt après s'être packé sur le raid.
 * **Tempête incendiaire** : inflige des dégâts dans une énorme zone autour de lui. Tous les joueurs doivent s'éloigner.
 
+![Taeshalach](http://wow.zamimg.com/uploads/screenshots/normal/677876.jpg)
+![Taeshalach2](http://wow.zamimg.com/uploads/screenshots/normal/677877.jpg)
+![Taeshalach3](http://wow.zamimg.com/uploads/screenshots/normal/677878.jpg)
+![Taeshalach4](http://wow.zamimg.com/uploads/screenshots/normal/677879.jpg)
+![Taeshalach5](http://wow.zamimg.com/uploads/screenshots/normal/677880.jpg)
+
 {{% /ability %}}
 
 {{% transition id="aggramar_transi1" %}}
