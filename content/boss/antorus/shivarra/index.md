@@ -26,6 +26,7 @@ Après 2 techniques de Titans les boss changent.
 Frappe flamboyante (Noura) attaque en cône devant le boss et augmente les dégâts de cette technique sur la cible de 50%.
 Gel éclair (Diima) inflige d'énorme dégâts à la cible et la ralenti de 10% pendant 20 secondes.
 Ces deux techniques se stackent, les tanks devront donc swap.
+
 {{% /ability %}}
 
 {{% ability
@@ -34,11 +35,12 @@ Ces deux techniques se stackent, les tanks devront donc swap.
   name="Noura, mère des Flammes."
 %}}
 Sabre tournoyant : lance une épée enflammée sur un joueur aléatoire puis la fait revenir doucement vers elle.
-
 > L'épée inflige des dégâts à l'aterrissage et sur son passage.
+
 Impulsion fulminante : place un débuff sur un joueur qui lui inflige des dégâts pendant 10 sec.
 > A la fin des 10 sec il inflige des dégâts à tous les joueurs dans les 8 mètres.
 
+![Noura](http://wow.zamimg.com/uploads/screenshots/normal/677867.jpg)
 {{% /ability %}}
 
 {{% ability
@@ -47,10 +49,12 @@ Impulsion fulminante : place un débuff sur un joueur qui lui inflige des dégâ
   name="Asara, mère de la Nuit."
 %}}
 Lames de l'ombre : Invoque 3 lames puis les envoies en ligne droite.
-
 > Les joueurs sur la trajectoire subissent des dégâts et sont repoussés.
+
 Tempête de ténèbres : inflige 1 000 000 de dégâts par seconde à tout le raid pendant 15 secondes.
 > (certains emplacements au sol réduisent les dégâts subis).
+
+![Noura](http://wow.zamimg.com/uploads/screenshots/normal/677858.jpg) ![Noura](http://wow.zamimg.com/uploads/screenshots/normal/677859.jpg)
 {{% /ability %}}
 
 {{% ability
@@ -59,10 +63,11 @@ Tempête de ténèbres : inflige 1 000 000 de dégâts par seconde à tout le ra
   name="Diima, mère de l'Obscurité.."
 %}}
 Sang gelé : place un shield d'absorb heal sur des joueurs au hasard.
-
 > Après quelques secondes les joueurs sont stun pendant une durée dépendante du shield restant.
+
 Orbe de givre : invoque une orbe qui inflige d'énormes dégâts à tout le raid et le slow pendant 20 secondes.
 > L'effet de slow est diminué si les joueurs sont éloignés de l'orbe.
+
 {{% /ability %}}
 
 {{% ability
@@ -72,8 +77,8 @@ Orbe de givre : invoque une orbe qui inflige d'énormes dégâts à tout le raid
 %}}
 Toucher du cosmos : cast interruptible qui inflige de gros dégâts à des joueurs aléatoires. Doit être kick.
 Regard cosmique : Lie deux joueurs avec un rayon de Fel.
-
 > Les joueurs sur la trajectoire du rayon subissent d'énormes dégâts (2.5 ~ 4M).
+
 {{% /ability %}}
 
 {{% transition id="shiv_transi" %}}
