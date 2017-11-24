@@ -50,6 +50,8 @@ Les joueurs doivent donc être espacés les uns des autres.
 Fait partir plusieurs traits de feu depuis ses pieds vers l'extérieur, qui infligent des dégâts et appliquent un DoT.
 Il suffit d'esquiver.
 
+![Sillage](http://wow.zamimg.com/uploads/screenshots/normal/677883.jpg) ![Sillage2](http://wow.zamimg.com/uploads/screenshots/normal/677884.jpg)
+
 {{% /ability %}}
 
 {{% ability
