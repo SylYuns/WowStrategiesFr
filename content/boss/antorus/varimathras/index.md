@@ -28,10 +28,10 @@ Deux techniques spécifiques pendant le combat :
   title="Torture des Shivarra"
   name="Tourments."
 %}}
-Tourment de flammes : inflige des dégâts de feu toutes les secondes.
-Tourment des ombres : inflige des dégâts d'ombre toutes les secondes.
-(HM) Tourment de givre : inflige des dégâts de glace toutes les secondes et ralenti le déplacement de 40%.
-(HM) Tourment de corruption : inflige des dégâts de fel toutes les 5 secondes. Augmente de 50% par tick.
+Tourment de flammes : (minute 0 -> 6) inflige des dégâts de feu toutes les secondes.
+Tourment des ombres : (minute 6 -> fin) inflige des dégâts d'ombre toutes les secondes.
+(HM) Tourment de givre : (minute 2 -> 4) inflige des dégâts de glace toutes les secondes et ralenti le déplacement de 40%.
+(HM) Tourment de corruption : (minute 4 -> 6) inflige des dégâts de fel toutes les 5 secondes. Augmente de 50% par tick.
 {{% /ability %}}
 
 {{% ability
@@ -42,6 +42,9 @@ Tourment des ombres : inflige des dégâts d'ombre toutes les secondes.
 %}}
 Attaque en cône devant lui en infligeant des dégâts d'ombre.
 Les tanks doivent swap pour alterner le débuff heal.
+{{% attention %}}
+Les tanks doivent être assez proches l'un de l'autre pour ne pas proc le **Seul dans les ténèbres** mais doivent être bien positionnés pour que l'offtank ne subisse pas le cleave.
+{{% /attention %}}
 {{% /ability %}}
 
 {{% ability
@@ -53,7 +56,8 @@ Marque un joueur et charge dans sa direction.
 Le premier joueur sur la trajectoire reçoit des dégâts d'ombre et est éjecté en arrière.
 
 {{% attention %}}
-Le but est que le joueur qui est bump atterrisse à proximité des distants pour ne pas déclencher *Seul dans les ténèbres*
+Le but est que le joueur qui est bump atterrisse à proximité des distants pour ne pas déclencher *Seul dans les ténèbres*. 
+Sinon demander à un joueur avec une charge (DH, War, Rogue, etc) de gérer cette technique.
 {{% /attention %}}
 {{% /ability %}}
 
@@ -65,7 +69,7 @@ Le but est que le joueur qui est bump atterrisse à proximité des distants pour
 Fait apparaître 3 failles à l'emplacement de joueurs aléatoires qui infligent des dégâts pendant 6 secondes puis explosent.
 Les joueurs doivent **immédiatement et tous ensemble** se décaller pour ne pas prendre les dégâts de la faille.
 
-![Fissure](/img/antorus/varimathras/vari_fissure.jpg)
+![Fissure](http://wow.zamimg.com/uploads/screenshots/normal/677796.jpg)
 {{% /ability %}}
 
 
