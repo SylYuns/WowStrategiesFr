@@ -278,6 +278,11 @@ a.article, a.article:hover {
 	max-width: 400px;
 }
 
+.details img {
+	height: auto;
+	max-width: 800px;
+}
+
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
