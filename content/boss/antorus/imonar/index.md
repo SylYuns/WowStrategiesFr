@@ -32,13 +32,12 @@ En P3 les stacks durent à l'infini.
   id="imonar_sommeil"
   title="Deuxième technique"
   name="Bombe de sommeil."
-  phase="P1, P3"
+  phase="P1"
 %}}
 Place un débuff sur un joueur qui l'endort pendant 20 secondes.
-Le débuff peut être dispell, mais cela endort tous les joueurs à 10m pendant 8 secondes.
+Le débuff peut être dispell, mais cela endort tous les joueurs à 7m pendant 8 secondes.
 Dès qu'un joueur est visé par le débuff tout le monde doit donc s'en écarter.
 
-![Sommeil](/img/antorus/imonar/imonar_sommeil.jpg)
 {{% /ability %}}
 
 {{% ability
@@ -54,7 +53,7 @@ Marcher sur une grenade au sol la fait exploser et bump les joueurs proches.
 Amélioré : Colle directement la grenade sur un joueur, qui inflige des dégâts à tous les autres joueurs dans les 5m et les bump toutes les 2 sec. Dure 10 minutes.
 {{% /attention %}}
 
-![Grenade](/img/antorus/imonar/imonar_grenade.jpg)
+![Grenade](http://wow.zamimg.com/uploads/screenshots/normal/677820.jpg)
 {{% /ability %}}
 
 {{% ability
@@ -67,7 +66,7 @@ Un vaisseau vise un joueur avec un rayon en plaçant un marqueur sur sa tête.
 Après 7 secondes tire un rayon en ligne droite.
 Les joueurs visés doivent se placer de manière à ce que le rayon ne touche personne d'autre.
 
-![Explosion](/img/antorus/imonar/imonar_explosion.jpg)
+![Explosion1](http://wow.zamimg.com/uploads/screenshots/normal/677818.jpg) ![Explosion2](http://wow.zamimg.com/uploads/screenshots/normal/677814.jpg) 
 {{% /ability %}}
 
 {{% ability
@@ -83,13 +82,18 @@ Marcher sur une mine la fait exploser et inflige un DoT de 30 sec.
 Amélioré : Bombarde la zone avec des AOEs. Être touché par cette technique applique un DoT de feu toutes les 2 sec **jusqu'à la mort !**
 {{% /attention %}}
 
-![Explosion](/img/antorus/imonar/imonar_shrapnel.jpg)
+![Explosion](http://wow.zamimg.com/uploads/screenshots/normal/677823.jpg)
 {{% /ability %}}
 
 {{% transition id="imonar_transi" %}}
 A 66% et 33% le boss traverse le pont pour changer de plateforme.
 Le raid doit traverser le plus vite possible en évitant les pièges.
 Une fois tout le raid sur la bonne plateforme, interrompre le boss.
+
+{{% accordion title="Voir le pont :" %}}
+![Transition](http://wow.zamimg.com/uploads/screenshots/normal/677822.jpg)
+{{% /accordion %}}
+
 {{% /transition %}}
 
 
@@ -98,5 +102,7 @@ Une fois tout le raid sur la bonne plateforme, interrompre le boss.
   title="Mode Héroïque :"
   mode="hm"
 %}}
-A priori rien de plus en Héroïque.
+En HM la zone d'effet lors du dispell des [Bombes de sommeil](#imonar_sommeil) est de 10m au lieu de 7m.
+Lors des phases de transis, des boules de feu vont traverser le pont dans le sens inverse des joueurs.
+> Celles-ci infligent de gros dégâts et ralentissent la vitesse de déplacement de 50%.
 {{% /ability %}}
