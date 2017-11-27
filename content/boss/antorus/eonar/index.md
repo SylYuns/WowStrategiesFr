@@ -22,25 +22,15 @@ Les adds ont 3 points de spawn possibles (prédéfinis).
 Zone immense avec plusieurs étages et 3 points de spawn des adds.
 
 {{% accordion title="Afficher la zone : " %}}
-![Zone](/img/antorus/eonar/eonar_zone.jpg)
-
-En rouge la zone "middle" avec le spawn des adds en 1.
-En rose la zone "lower" avec le spawn des adds en 2.
-En jaune la zone "upper" avec le spawn des adds en 3.
-En vert la zone où il est facile de dps les Kéraptéron (chauves-souris)
+![Zone](http://wow.zamimg.com/uploads/screenshots/normal/677844.jpg)
 {{% /accordion %}}
 
 Un spell spécial permet de sauter super haut et de voler.
-Des "trampolines" sont placés à différents endroits pour passer d'un niveau à l'autre.
+Des "trampolines" (pads) sont placés à différents endroits pour passer d'un niveau à l'autre.
 RIP Klaab.
 
-{{% accordion title="Détail des premiers spawns : " %}}
-* Middle portal (destructor)
-* Lower portal (destructor)
-* Upper portal (obfuscater + destructor)
-* 2 : Lower (purifier) + Upper (obfuscater + purifier) + bats (intercept middle)
-* 2 : Upper (felhounds) + Middle (obfuscator + destructor)
-{{% /accordion %}}
+[Détail des spawns](http://www.wowhead.com/eonar-antorus-the-burning-throne-raid-strategy-guide#normal-mode-portal-spawns)
+
 {{% /transition %}}
 
 {{% ability
@@ -72,17 +62,6 @@ RIP Klaab.
 {{% /ability %}}
 
 {{% ability
-  id="eonar_lance"
-  title="Technique du Paraxis"
-  name="Lance de la calamité."
-%}}
-  Vise un joueur avec un rayon qui laisse une AOE de Fel là où il passe.
-  Cette AOE donne un boost de vitesse aux adds. Le rayon doit donc être mis sur les bords des plateformes.
-
-  ![Lance](/img/antorus/eonar/eonar_lance.jpg)
-{{% /ability %}}
-
-{{% ability
   id="eonar_pluie"
   title="Technique du Paraxis"
   name="Pluie de corruption."
@@ -95,9 +74,12 @@ RIP Klaab.
 
 {{% ability
   id="eonar_hm"
-  title="Mode Héroïque"
+  title="Mode Héroïque :"
+  name="Lance de la calamité."
   mode="hm"
 %}}
-  En Héroïque le Paraxis aura peut-être de nouvelles techniques et il faudra peut-être que certains joueurs prennent un portail pour aller sur le vaisseau et arrêter un cast.
-  (mais cette technique n'existe peut-être qu'en Mythique.)
+  Vise un joueur avec un rayon qui laisse une AOE de Fel là où il passe.
+  Cette AOE donne un boost de vitesse aux adds. Le rayon doit donc être mis sur les bords des plateformes.
+
+  ![Lance](/img/antorus/eonar/eonar_lance.jpg)
 {{% /ability %}}
