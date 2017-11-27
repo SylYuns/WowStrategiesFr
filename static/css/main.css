@@ -270,6 +270,12 @@ a.article, a.article:hover {
     padding: 20px;
     min-height: 100vh;
     transition: all 0.3s;
+    margin-bottom: 300px;
+}
+
+#content img {
+	width: 100%;
+	max-width: 300px;
 }
 
 /* ---------------------------------------------------
