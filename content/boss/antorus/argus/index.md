@@ -26,7 +26,7 @@ Nécessité une bonne réactivité de mouvement du groupe et des tanks.
 Les attaques de mélée du boss frappent à 180° devant lui et appliquent un débuff qui augmente les dégâts reçus de cette technique de 75% pendant 15 secondes.
 Les tanks doivent donc swap tous les 3 stacks.
 
-En P4 le débuff est de 200% et est permanent [Voir transi P4](#argus_transi3).  
+En P4 le débuff est de 200% et est permanent ([Voir P4](#argus_transi3)).  
 
 {{% /ability %}}
 
@@ -76,8 +76,8 @@ Les joueurs étant packés cette technique ne pose pas de gros problèmes, cepen
 %}}
 Place une orbe d'eau sur un joueur et une orbe d'éclairs sur un autre.
 Après 5 secondes les orbes se fixent au sol. 
-Les joueurs qui entrent en contact avec l'orbe d'eau gagnent 2000 de hâte et de polyvalence pendant 2 minutes.
-Les joueurs qui entrent en contact avec l'orbe d'éclairs gagnent 2000 de maîtrise et de critique pendant 2 minutes.
+Les joueurs qui entrent en contact avec l'orbe d'eau gagnent 2000 de hâte et de polyvalence pendant 1 minute.
+Les joueurs qui entrent en contact avec l'orbe d'éclairs gagnent 2000 de maîtrise et de critique pendant 1 minute.
 Les buffs sont exclusifs, donc si un joueur possède un buff et touche l'autre, il perd le premier.
 Un même buff est stackable, donc les joueurs peuvent monter à +10 000 ou +12 000 hâte/poly ou maîtrise/crit.
 
@@ -121,7 +121,7 @@ Le joueur avec la Bombe d'âme devra être accompagné du tank qui possède l'Av
   name="Tranchant d'oblitération."
   phase="P2"
 %}}
-Des faux vont apparaître à des positions aléatoires, tournant sur elles-même avant de marquer une grand zone en ligne droite et de la traverser, infligeant des dégâts, un bump et un DoT.
+Des faux vont apparaître à des positions aléatoires, tournant sur elles-même avant de marquer une grande zone en ligne droite et de la traverser, infligeant des dégâts, un bump et un DoT.
 Il suffit de ne pas rester sur la trajectoire.
 
 ![Faux](http://wow.zamimg.com/uploads/screenshots/normal/677896.jpg)
@@ -213,7 +213,7 @@ Au contraire, les joueurs doivent essayer de ramasser les Particules de puissanc
   name="Module de Réorigination."
   phase="P4"
 %}}
-Fait apparaître 3 orbes qui lancent un cast et donc la zone d'effet s'agrandit au fur et à mesure.
+Fait apparaître 3 orbes qui lancent un cast et dont la zone d'effet s'agrandit au fur et à mesure.
 A la fin du cast, provoque une explosion de la zone correspondante.
 Ces orbes doivent être tuées le plus vite possible pour limiter leur taille.
 
@@ -228,9 +228,9 @@ A chaque fois que cette technique est utilisée le nombre d'orbes augmente de 1.
   phase="P2, P4"
 %}}
 Argus continue à placer des bombes à 50 et 100% d'énergie, cependant il n'y a plus le buff Avatar sur un tank.
-Le joueur visé est donc condamné à mourir et doit revenir à l'arbre d'Eonar (en pensant à collecter des Particules de puissance).
+Le joueur visé par la Bombe d'âme est donc condamné à mourir et doit revenir à l'arbre d'Eonar (en pensant à collecter des Particules de puissance).
 
-Le débuff sur les tanks est de 200% et dure à l'infini, les tanks vont donc finir par mourir et doivent eux aussi retourner à l'arbre (en pensant à collecter des Particules de puissance).
+Le débuff des attaques d'Argus sur les tanks est de 200% et permanent, les tanks vont donc finir par mourir et doivent eux aussi retourner à l'arbre (en pensant à collecter des Particules de puissance).
 {{% /ability %}}
 
 {{% ability
