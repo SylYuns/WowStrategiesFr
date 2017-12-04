@@ -121,7 +121,15 @@ La BL est claquée à ce moment.
   title="Mode Héroïque :"
   mode="hm"
 %}}
-En Héroïque les joueurs doivent gérer les techniques spéciales de chaque plateforme en allant chercher un buff sur une autre plateforme.
+En Héroïque les diablotins invoqués par Hasabel ne doivent réussir **AUCUN** cast. Dès qu'ils apparaissent tous les DPS doivent les focus et utiliser un maximum de contrôles.
+{{% /ability %}}
+
+{{% ability
+  id="hasabel_heroic"
+  title="Mode Mythique :"
+  mode="hm"
+%}}
+En Mythique les joueurs doivent gérer les techniques spéciales de chaque plateforme en allant chercher un buff sur une autre plateforme.
 Avant d'aller sur Vulcanar, un joueur doit aller chercher une Gelée caustique sur la plateforme Rancora (portail 2) et la ramener pour la faire exploser sur l'add.
 Avant d'aller sur Dacidion, un joueur doit aller chercher une Ombre engluante sur la plateforme Nathreza (portail 3) et la ramener pour la faire exploser sur l'add.
 Avant d'aller sur Nathreza, des joueurs doivent aller chercher des Flammes semperardentes sur la plateforme Xoroth (portail 1) et les ramener pour donner la vision au raid.
