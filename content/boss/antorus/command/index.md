@@ -134,5 +134,6 @@ Le plus de mines possible doivent être désactivées, en particulier s'il y en 
   title="Mode Héroïque"
   mode="hm"
 %}}
-A priori rien de plus en Héroïque.
+En Héroïque les joueurs qui sortent d'un Pod ont un débuff qui les empêche de rentrer à nouveau dans un pod pendant 3 min.
+6 joueurs doivent donc être prévus pour gérer les pods (2 par pod, switch à 20 stacks).
 {{% /ability %}}
